@@ -1,8 +1,6 @@
-# Awesome NVIDIA Issac Gym
+# Awesome NVIDIA Isaac Gym
 
-
-# Contents
-
+Collect some related resources of NVIDIA Isaac Gym
 
 ## Official resource
 
@@ -29,27 +27,15 @@
 
 - [Building an Intelligent Robot Dog with the NVIDIA Isaac SDK](https://developer.nvidia.com/blog/building-intelligent-robot-dog-with-isaac-sdk/)
 
-- []()
-
-- []()
-
-- []()
-
-https://www.youtube.com/c/NVIDIAOmniverse/videos?&ab_channel=NVIDIAOmniverse
+- [youtube video NVIDIAOmniverse](https://www.youtube.com/c/NVIDIAOmniverse/videos?&ab_channel=NVIDIAOmniverse)
 
 ## GTC
 
 - [Sim-to-Real in Isaac Sim](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/)
 
-Learn how to train and test robots in virtual environments with Isaac Sim on Omniverse, then transfer to physical Jetson powered robots.
-
 - [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)
 
-Isaac Gym is NVIDIA’s environment for high-performance reinforcement learning on GPUs. We will review key API features, demonstrate examples of training agents, and provide updates on future integration of Isaac Gym functionality within the NVIDIA Omniverse platform. We will demonstrate how to create environments with thousands of agents to train in parallel, and how the Isaac Gym system allows developers to create tensor based views of physics state for all environments. We will also demonstrate the application of physics based domain randomization in Isaac Gym, which can help with sim2real transfer of learned policies to physical robots.
-
 - [Bridging Sim2Real Gap: Simulation Tuning for Training Deep Learning Robotic Perception Models](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31649/)
-
-Deep neural networks enable accurate perception for robots. Simulation offers a way to train deep learning robotic perception models that were previously not possible in scenarios where it is prohibitively expensive, time-consuming, or infeasible to collect large labeled datasets. We’ll dive into how NVIDIA is bridging the gap between simulation and reality with domain randomization, photorealistic simulation, and accurate physics imitation with Isaac Sim, and more.
 
 - [Reinforcement Learning and Intralogistics: Soft Actor Critic for Maples Navigation in Warehouses](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-e31467/)
 
@@ -77,70 +63,50 @@ Deep neural networks enable accurate perception for robots. Simulation offers a 
 
 ## Papers
 
-- [Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion](https://arxiv.org/abs/2011.02404)
+- [tech report 2021] Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning: [project](https://sites.google.com/view/isaacgym-nvidia), [paper](https://arxiv.org/abs/2108.10470)
+  
+- [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
 
-[video](https://youtu.be/ckdHWWpfSpk), [project](https://www.pair.toronto.edu/understanding-dr/) []()
+- [2021] GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model: [project](https://www.pair.toronto.edu/glide-quadruped/), [paper](https://arxiv.org/abs/2104.09771)
 
-- [GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model]()
+- [2021] Articulated Object Interaction in Unknown Scenes with Whole-Body Mobile Manipulation: [paper](http://arxiv.org/abs/2103.10534), [video](https://youtu.be/Mwer50_fdCU), [project](https://www.pair.toronto.edu/articulated-mm/)
 
-[project](https://www.pair.toronto.edu/glide-quadruped/), [paper]()
+- [CoRL2020] Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion: [paper](https://arxiv.org/abs/2009.10019), [video](https://youtu.be/JJOmFZKpYTo), [project](https://sites.google.com/view/learn-contact-controller/home), [blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
 
-- [Articulated Object Interaction in Unknown Scenes with Whole-Body Mobile Manipulation]()
+- [ICRA2019] Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience: [paper](https://arxiv.org/abs/1810.05687), [video](https://youtu.be/nilcJY5Kdt8), [project](https://sites.google.com/view/simopt)
 
-[paper](http://arxiv.org/abs/2103.10534), [video](https://youtu.be/Mwer50_fdCU), [project](https://www.pair.toronto.edu/articulated-mm/)
-
-- [Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion]()
-
-CoRL2020, [paper](https://arxiv.org/abs/2009.10019), [video](), [project]()
-
-- [Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience]()
-
-[paper](https://arxiv.org/abs/1810.05687), [video](), [project](https://sites.google.com/view/simopt)
-
-
-
-## code
+## related code
 
 - [deformable_object_grasping](https://github.com/NVlabs/deformable_object_grasping)
 
-This package provides a framework to automatically perform grasp tests on an arbitrary object model of choice.
+- [rl_games](https://github.com/Denys88/rl_games): rl algorithms with isaac gym
 
-- [rl_games](https://github.com/Denys88/rl_games)
+- [leibnizgym](https://github.com/pairlab/leibnizgym): IsaacGym environment for Trifinger robot
 
-RL implementations
+- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym.
 
-- [leibnizgym](https://github.com/pairlab/leibnizgym)
-
-IsaacGym environment for Trifinger robot
-
-- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO)
-
-Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym.
-
-![](resources/joystick.gif)
-
-- []()
+<p align="center">
+    <img src="resources/joystick.gif" width="200"/>
+</p>
 
 
+## tutorials & videos
 
-## robot
+### official introduction
+- [Isaac Gym Part 1: Introduction and Getting Started](https://youtu.be/nleDq-oJjGk)
+- [Isaac Gym Part 2: Environments, Training, and Tips](https://youtu.be/1RSugmJ4_gs)
+- [Isaac Gym Part 3A: Academic Labs - University of Toronto](https://youtu.be/nXM5_mwUFOI)
+- [Isaac Gym Part 3B: Academic Labs - IMLab](https://youtu.be/VrTVUpDM7K8)
+- [Isaac Gym Part 3C: Academic Labs - Stanford University](https://youtu.be/RhjRrUK2abs))
+- [Isaac Gym Part 3D: Academic Labs - Soft-Body Simulation](https://youtu.be/i4fGVc6lImo)
+- [Isaac Gym Part 3E: Academic Labs - Eth Zurich](https://youtu.be/Afi17BnSuBM)
+- [Isaac Gym Part 4: New Frontiers in End-to-End GPU Accelerated Reinforcement Learning](https://youtu.be/WhaybakLTXE)
 
-## videos
-
-- [Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)
-
-![]()
-
-## tutorials
-
+### videos
 - [How to Import Your Robot Into Isaac Sim in NVIDIA Omniverse](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
-
 - [Youtube NVIDIA Omniverse](https://www.youtube.com/channel/UCSKUoczbGAcMld7HjpCR8OA)
-
 - [Basic Demo of the NVIDIA Isaac Simulator (Part 1)](https://www.youtube.com/watch?v=b12M_kCW82o)
-
 - [Basic Demo of the NVIDIA Isaac Simulator (Part 2)](https://youtu.be/XcvMCs9NJfM)
-
 - [Introduction and Live Demo in Isaac Sim - Community Stream](https://youtu.be/vpHR0qiH-GY)
-
 - [From Point Clouds to Material Graphs: Explore the Latest in Omniverse Create 2021.3](https://youtu.be/t9nVWhnOgbE)
+- [Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)
