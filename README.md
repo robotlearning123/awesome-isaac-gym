@@ -6,14 +6,13 @@ Collect some related resources of NVIDIA Isaac Gym
 
 - [Isaac Gym](https://developer.nvidia.com/isaac-gym)
 
-- [Issac SDK](https://docs.nvidia.com/isaac/isaac/doc/index.html)
+- [Isaac SDK](https://docs.nvidia.com/isaac/isaac/doc/index.html)
 
-- [issac gym forum](https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322)
+- [Isaac gym forum](https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322)
 
+- [Isaac Sim GTC 2021, sim-to-real](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/)
 
-- [Issac Sim GTC 2021, sim-to-real](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/)
-
-- [Issac Sim video toturials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
+- [Isaac Sim video toturials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
 
 - [Training Your JetBot in NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-jetbot-in-isaac-sim/)
 
@@ -88,7 +87,6 @@ Collect some related resources of NVIDIA Isaac Gym
 <p align="center">
     <img src="resources/joystick.gif" width="200"/>
 </p>
-
 
 ## tutorials & videos
 
