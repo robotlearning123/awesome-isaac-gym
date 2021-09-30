@@ -62,6 +62,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ## Papers
 
+- [2021] Transferring Dexterous Manipulation from GPU Simulation to a Remote Real-World TriFinger: [project](https://s2r2-ig.github.io/), [paper](https://arxiv.org/pdf/2108.09779.pdf), [code](https://github.com/pairlab/leibnizgym/)
+
 - [tech report 2021] Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning: [project](https://sites.google.com/view/isaacgym-nvidia), [paper](https://arxiv.org/abs/2108.10470)
   
 - [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
