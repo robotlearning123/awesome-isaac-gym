@@ -76,15 +76,21 @@ Collect some related resources of NVIDIA Isaac Gym
 
 - [ICRA2019] Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience: [paper](https://arxiv.org/abs/1810.05687), [video](https://youtu.be/nilcJY5Kdt8), [project](https://sites.google.com/view/simopt)
 
-## related code
+## RL library 
 
-- [deformable_object_grasping](https://github.com/NVlabs/deformable_object_grasping)
+These RL libraries can support the training with Isaac Gym.
 
 - [rl_games](https://github.com/Denys88/rl_games): rl algorithms with isaac gym
 
-- [leibnizgym](https://github.com/pairlab/leibnizgym): IsaacGym environment for Trifinger robot
+- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
 
-- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym.
+## related repos
+
+- [deformable_object_grasping](https://github.com/NVlabs/deformable_object_grasping)
+
+- [Trifinger](https://github.com/pairlab/leibnizgym): IsaacGym environment for Trifinger robot
+
+- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym
 
 <p align="center">
     <img src="resources/joystick.gif" width="200"/>
