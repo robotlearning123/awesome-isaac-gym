@@ -61,26 +61,45 @@ Collect some related resources of NVIDIA Isaac Gym
 - [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)
 
 ## Papers
-- [arxiv2021] BayesSimIG: Scalable Parameter Inference for Adaptive Domain Randomization with Isaac Gym: [paper](https://arxiv.org/pdf/2107.04527.pdf), [code](https://github.com/NVlabs/bayes-sim-ig)
+
+### Manipulation
+- [ICRA2021] Causal Reasoning in Simulationfor Structure and Transfer Learning of Robot Manipulation Policies: [paper](https://arxiv.org/pdf/2103.16772.pdf), [project](https://sites.google.com/view/crest-causal-struct-xfer-manip)
+
+- [RSS2021 DO-Sim workshop] DefGraspSim: Simulation-based grasping of 3D deformable objects: [paper](https://arxiv.org/pdf/2107.05778.pdf), [project](https://sites.google.com/nvidia.com/defgraspsim), [video](https://youtu.be/Caj0AtsKKVI), [**code**](https://github.com/NVlabs/deformable_object_grasping)
+
 - [arxiv2021] Search-Based Task Planning with Learned Skill Effect Models for Lifelong Robotic Manipulation: [paper](https://arxiv.org/pdf/2109.08771.pdf), [project](https://sites.google.com/view/sem-for-lifelong-manipulation)
-- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), []() [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [code](https://drive.google.com/drive/folders/1N84OYxAxVIk9WnxRB54dlOvg6NddNZ7i)
 
-- [2021] Transferring Dexterous Manipulation from GPU Simulation to a Remote Real-World TriFinger: [project](https://s2r2-ig.github.io/), [paper](https://arxiv.org/pdf/2108.09779.pdf), [code](https://github.com/pairlab/leibnizgym/)
+<!-- - [] Deformation-Aware Data-Driven Grasp Synthesis: [paper](https://arxiv.org/pdf/2109.05320.pdf), [project]() -->
 
-- [NeurIPS2021] Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning: [project](https://sites.google.com/view/isaacgym-nvidia), [paper](https://arxiv.org/abs/2108.10470), [openreview](https://openreview.net/forum?id=fgFBtYgJQX_)
+- [2021] Transferring Dexterous Manipulation from GPU Simulation to a Remote Real-World TriFinger: [project](https://s2r2-ig.github.io/), [paper](https://arxiv.org/pdf/2108.09779.pdf), [**code**](https://github.com/pairlab/leibnizgym/)
+
+- [ICRA2021] In-Hand Object Pose Tracking via Contact Feedback and GPU-Accelerated Robotic Simulation: [paper](https://arxiv.org/pdf/2002.12160.pdf), [project](https://sites.google.com/view/in-hand-object-pose-tracking/)
+
+- [IROS2021] Reactive Long Horizon Task Execution via Visual Skill and Precondition Models: [paper](https://arxiv.org/pdf/2011.08694.pdf), [video](https://www.youtube.com/playlist?list=PL-oD0xHUngeLfQmpngYkGFZarstfPOXqX)
+
+### Localization
+- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://drive.google.com/drive/folders/1N84OYxAxVIk9WnxRB54dlOvg6NddNZ7i)
   
 - [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
 
 - [2021] GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model: [project](https://www.pair.toronto.edu/glide-quadruped/), [paper](https://arxiv.org/abs/2104.09771)
 
-- [2021] Articulated Object Interaction in Unknown Scenes with Whole-Body Mobile Manipulation: [paper](http://arxiv.org/abs/2103.10534), [video](https://youtu.be/Mwer50_fdCU), [project](https://www.pair.toronto.edu/articulated-mm/)
-
 - [CoRL2020] Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion: [paper](https://arxiv.org/abs/2009.10019), [video](https://youtu.be/JJOmFZKpYTo), [project](https://sites.google.com/view/learn-contact-controller/home), [blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
 
-- [ICRA2021] In-Hand Object Pose Tracking via Contact Feedback and GPU-Accelerated Robotic Simulation: [paper](https://arxiv.org/pdf/2002.12160.pdf), [project](https://sites.google.com/view/in-hand-object-pose-tracking/)
+- [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
 
-- [RSS2020] Learning Active Task-Oriented Exploration Policies
-for Bridging the Sim-to-Real Gap: [paper](https://arxiv.org/pdf/2006.01952.pdf), [project](https://sites.google.com/view/task-oriented-exploration/)
+- [CoRL2020] Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation: [paper](https://arxiv.org/pdf/2011.04627.pdf), [project](https://sites.google.com/view/compositional-object-control/)
+- [] : [paper]()
+
+### Others
+
+- [arxiv2021] BayesSimIG: Scalable Parameter Inference for Adaptive Domain Randomization with Isaac Gym: [paper](https://arxiv.org/pdf/2107.04527.pdf), [**code**](https://github.com/NVlabs/bayes-sim-ig)
+
+- [2021] Articulated Object Interaction in Unknown Scenes with Whole-Body Mobile Manipulation: [paper](http://arxiv.org/abs/2103.10534), [video](https://youtu.be/Mwer50_fdCU), [project](https://www.pair.toronto.edu/articulated-mm/)
+
+- [NeurIPS2021] Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning: [project](https://sites.google.com/view/isaacgym-nvidia), [paper](https://arxiv.org/abs/2108.10470), [openreview](https://openreview.net/forum?id=fgFBtYgJQX_)
+
+- [RSS2020] Learning Active Task-Oriented Exploration Policies for Bridging the Sim-to-Real Gap: [paper](https://arxiv.org/pdf/2006.01952.pdf), [project](https://sites.google.com/view/task-oriented-exploration/)
 
 - [ICRA2019] Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience: [paper](https://arxiv.org/abs/1810.05687), [video](https://youtu.be/nilcJY5Kdt8), [project](https://sites.google.com/view/simopt)
 
@@ -94,25 +113,21 @@ These RL libraries can support the training with Isaac Gym.
 
 - [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
 
-## related repos
+## Related GitHub Repos
 
 - [IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
-- [isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering)
-- [isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils): Developed by the CMU Intelligent Autonomous Manipulation Lab
 
-- [deformable_object_grasping](https://github.com/NVlabs/deformable_object_grasping)
+- [isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering)
+
+- [isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils): Developed by the CMU Intelligent Autonomous Manipulation Lab
 
 - [Trifinger](https://github.com/pairlab/leibnizgym): IsaacGym environment for Trifinger robot
 
 - [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym
 
-<p align="center">
-    <img src="resources/joystick.gif" width="200"/>
-</p>
+## Tutorials & Videos
 
-## tutorials & videos
-
-### official introduction
+### Official introduction
 - [Isaac Gym Part 1: Introduction and Getting Started](https://youtu.be/nleDq-oJjGk)
 - [Isaac Gym Part 2: Environments, Training, and Tips](https://youtu.be/1RSugmJ4_gs)
 - [Isaac Gym Part 3A: Academic Labs - University of Toronto](https://youtu.be/nXM5_mwUFOI)
@@ -122,7 +137,7 @@ These RL libraries can support the training with Isaac Gym.
 - [Isaac Gym Part 3E: Academic Labs - Eth Zurich](https://youtu.be/Afi17BnSuBM)
 - [Isaac Gym Part 4: New Frontiers in End-to-End GPU Accelerated Reinforcement Learning](https://youtu.be/WhaybakLTXE)
 
-### videos
+### Videos
 - [How to Import Your Robot Into Isaac Sim in NVIDIA Omniverse](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
 - [Youtube NVIDIA Omniverse](https://www.youtube.com/channel/UCSKUoczbGAcMld7HjpCR8OA)
 - [Basic Demo of the NVIDIA Isaac Simulator (Part 1)](https://www.youtube.com/watch?v=b12M_kCW82o)
