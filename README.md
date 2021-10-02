@@ -63,19 +63,30 @@ Collect some related resources of NVIDIA Isaac Gym
 ## Papers
 
 ### Manipulation
+
+- [RSS2021@DO-Sim] DO-Sim: Workshop on Deformable Object Simulation in Robotics: [link](https://sites.google.com/nvidia.com/do-sim/home)
+
 - [ICRA2021] Causal Reasoning in Simulationfor Structure and Transfer Learning of Robot Manipulation Policies: [paper](https://arxiv.org/pdf/2103.16772.pdf), [project](https://sites.google.com/view/crest-causal-struct-xfer-manip)
 
 - [RSS2021 DO-Sim workshop] DefGraspSim: Simulation-based grasping of 3D deformable objects: [paper](https://arxiv.org/pdf/2107.05778.pdf), [project](https://sites.google.com/nvidia.com/defgraspsim), [video](https://youtu.be/Caj0AtsKKVI), [**code**](https://github.com/NVlabs/deformable_object_grasping)
 
 - [arxiv2021] Search-Based Task Planning with Learned Skill Effect Models for Lifelong Robotic Manipulation: [paper](https://arxiv.org/pdf/2109.08771.pdf), [project](https://sites.google.com/view/sem-for-lifelong-manipulation)
 
-<!-- - [] Deformation-Aware Data-Driven Grasp Synthesis: [paper](https://arxiv.org/pdf/2109.05320.pdf), [project]() -->
+- [2021] Deformation-Aware Data-Driven Grasp Synthesis: [paper](https://arxiv.org/pdf/2109.05320.pdf)
 
 - [2021] Transferring Dexterous Manipulation from GPU Simulation to a Remote Real-World TriFinger: [project](https://s2r2-ig.github.io/), [paper](https://arxiv.org/pdf/2108.09779.pdf), [**code**](https://github.com/pairlab/leibnizgym/)
 
 - [ICRA2021] In-Hand Object Pose Tracking via Contact Feedback and GPU-Accelerated Robotic Simulation: [paper](https://arxiv.org/pdf/2002.12160.pdf), [project](https://sites.google.com/view/in-hand-object-pose-tracking/)
 
 - [IROS2021] Reactive Long Horizon Task Execution via Visual Skill and Precondition Models: [paper](https://arxiv.org/pdf/2011.08694.pdf), [video](https://www.youtube.com/playlist?list=PL-oD0xHUngeLfQmpngYkGFZarstfPOXqX)
+
+- [CoRL2021] STORM: An Integrated Framework for Fast Joint-Space Model-Predictive Control for Reactive Manipulation: [paper](https://arxiv.org/pdf/2104.13542.pdf), [project](https://sites.google.com/view/manipulation-mpc), [**code**](https://github.com/NVlabs/storm)
+
+- [ICRA2021] Sim-to-Real for Robotic Tactile Sensing via Physics-Based Simulation and Learned Latent Projections: [paper](https://arxiv.org/pdf/2103.16747.pdf)
+
+- [2021] DeformerNet: A Deep Learning Approach to 3D Deformable Object Manipulation: [paper](https://arxiv.org/pdf/2107.08067.pdf)
+
+- [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
 
 ### Localization
 - [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://drive.google.com/drive/folders/1N84OYxAxVIk9WnxRB54dlOvg6NddNZ7i)
@@ -89,7 +100,6 @@ Collect some related resources of NVIDIA Isaac Gym
 - [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
 
 - [CoRL2020] Learning to Compose Hierarchical Object-Centric Controllers for Robotic Manipulation: [paper](https://arxiv.org/pdf/2011.04627.pdf), [project](https://sites.google.com/view/compositional-object-control/)
-- [] : [paper]()
 
 ### Others
 
@@ -121,13 +131,24 @@ These RL libraries can support the training with Isaac Gym.
 
 - [isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils): Developed by the CMU Intelligent Autonomous Manipulation Lab
 
-- [Trifinger](https://github.com/pairlab/leibnizgym): IsaacGym environment for Trifinger robot
+- [isaacgym_sandbox](https://github.com/kploeger/isaacgym_sandbox)
 
 - [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym
 
+- [dvrk_IssacGym](https://github.com/baotruyenthach/dvrk_IssacGym), [link](https://github.com/baotruyenthach/dvrk_grasp_pipeline_isaacgym)
+
+- [dvrk-shape_servoing](https://github.com/Utah-ARMLab/shape_servoing)
+
+- [codebase_thesis](https://github.com/sivva-dev/codebase_thesis)
+
+- [Bittle_URDF](https://github.com/AIWintermuteAI/Bittle_URDF)
+
+- [SceneCollisionNet](https://github.com/NVlabs/SceneCollisionNet)
+
+
 ## Tutorials & Videos
 
-### Official introduction
+### RSS2021 Workshop (https://sites.google.com/view/isaacgym/home)
 - [Isaac Gym Part 1: Introduction and Getting Started](https://youtu.be/nleDq-oJjGk)
 - [Isaac Gym Part 2: Environments, Training, and Tips](https://youtu.be/1RSugmJ4_gs)
 - [Isaac Gym Part 3A: Academic Labs - University of Toronto](https://youtu.be/nXM5_mwUFOI)
