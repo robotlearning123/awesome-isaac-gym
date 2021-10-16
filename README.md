@@ -30,6 +30,10 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ## GTC
 
+- [Isaac Gym and Omniverse: High Performance Reinforcement Learning Evolved [A31118]](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog?search=A31118)
+
+- [Learning Challenging Tasks For Quadrupedal Robots: From Simulation To Reality [A31308]](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog?search=A31308)
+
 - [Sim-to-Real in Isaac Sim](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/)
 
 - [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)
