@@ -68,6 +68,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ### Manipulation
 
+- [arxiv2021] Data-Driven Operational Space Control for Adaptative and Robust Robot Manipulation: [project](https://cremebrule.github.io/oscar-web/), [paper](https://arxiv.org/abs/2110.00704), [code](https://github.com/nvlabs/oscar)
+
 - [RSS2021@DO-Sim] DO-Sim: Workshop on Deformable Object Simulation in Robotics: [link](https://sites.google.com/nvidia.com/do-sim/home)
 
 - [ICRA2021] Causal Reasoning in Simulationfor Structure and Transfer Learning of Robot Manipulation Policies: [paper](https://arxiv.org/pdf/2103.16772.pdf), [project](https://sites.google.com/view/crest-causal-struct-xfer-manip)
