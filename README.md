@@ -2,6 +2,16 @@
 
 Collect some related resources of NVIDIA Isaac Gym
 
+## News
+
+- [29/10/2021] Isaac Gym Preview 3 is available
+
+- [NVIDIA Isaac Sim on Omniverse Now Available in Open Beta 21/06/2021](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/)
+
+- [Isaac Gym](https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9918/)
+
+- [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)
+
 ## Official resource
 
 - [Isaac Gym](https://developer.nvidia.com/isaac-gym)
@@ -55,14 +65,6 @@ Collect some related resources of NVIDIA Isaac Gym
 - [ISAAC SIM Introduction and Live Demo](https://www.nvidia.com/en-us/on-demand/session/omniverse2020-om1314/)
 
 - [NVIDIA on-demand ISAAC SIM](https://www.nvidia.com/en-us/on-demand/search/?facet.mimetype[]=event%20session&layout=list&page=1&q=isaac%20sim&sort=relevance)
-
-## News
-
-- [NVIDIA Isaac Sim on Omniverse Now Available in Open Beta 21/06/2021](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/)
-
-- [Isaac Gym](https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9918/)
-
-- [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)
 
 ## Papers
 
