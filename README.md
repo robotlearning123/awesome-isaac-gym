@@ -97,7 +97,7 @@ Collect some related resources of NVIDIA Isaac Gym
 - [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
 
 ### Localization
-- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://drive.google.com/drive/folders/1N84OYxAxVIk9WnxRB54dlOvg6NddNZ7i)
+- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
   
 - [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
 
