@@ -153,6 +153,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [SceneCollisionNet](https://github.com/NVlabs/SceneCollisionNet)
 
+- [TD3 applied to the Bittle robot in Isaac Sim](https://github.com/Sentdex/TD3-Bittle)
+
 
 ## Tutorials & Videos
 
@@ -174,3 +176,7 @@ These RL libraries can support the training with Isaac Gym.
 - [Introduction and Live Demo in Isaac Sim - Community Stream](https://youtu.be/vpHR0qiH-GY)
 - [From Point Clouds to Material Graphs: Explore the Latest in Omniverse Create 2021.3](https://youtu.be/t9nVWhnOgbE)
 - [Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)
+- [Can we simulate a real robot?](https://youtu.be/phTnbmXM06g) A journey through trying to find a high quality physics simulator for a robot dog/quadruped (using the Petoi Bittle in this case).
+- [Teaching Robots to Walk w/ Reinforcement Learning](https://youtu.be/6qbW7Ki9NUc) Robot sim adventure video part two, covering my attempts to get some reinforcement learning to work with the Bittle robot in the Isaac sim. 
+- [Robot Dog Learns to Walk - Bittle Reinforcement Learning p.3](https://youtu.be/A0tPe7-R8z0) Further progress with using reinforcement learning to train robot dogs/quadrupeds to walk
+
