@@ -155,6 +155,10 @@ These RL libraries can support the training with Isaac Gym.
 
 - [TD3 applied to the Bittle robot in Isaac Sim](https://github.com/Sentdex/TD3-Bittle)
 
+- [Isaac-ManipulaRL](https://github.com/cypypccpy/Isaac-ManipulaRL) Deep Reinforcement Learning Framework for Manipulator based on NVIDIA's Isaac-gym, Additional add SAC2019 and Reinforcement Learning from Demonstration Algorithm.
+
+- [legged_gym_isaac](https://github.com/chengxuxin/legged_gym_isaac)
+
 
 ## Tutorials & Videos
 
