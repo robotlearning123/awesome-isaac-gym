@@ -131,6 +131,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
 
+- [skrl](https://github.com/Toni-SM/skrl)
+
 ## Related GitHub Repos
 
 - [IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
