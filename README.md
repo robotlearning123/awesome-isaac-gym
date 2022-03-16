@@ -188,3 +188,7 @@ These RL libraries can support the training with Isaac Gym.
 - [Teaching Robots to Walk w/ Reinforcement Learning](https://youtu.be/6qbW7Ki9NUc) Robot sim adventure video part two, covering my attempts to get some reinforcement learning to work with the Bittle robot in the Isaac sim. 
 - [Robot Dog Learns to Walk - Bittle Reinforcement Learning p.3](https://youtu.be/A0tPe7-R8z0) Further progress with using reinforcement learning to train robot dogs/quadrupeds to walk
 
+### Blogs
+
+- [A brief introduction to Nvidia Omniverse](https://zhuanlan.zhihu.com/p/462305733)
+
