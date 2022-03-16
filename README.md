@@ -4,6 +4,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ## News
 
+- [23/03/2022] GTC2022: [Isaac Gym: The Next Generation — High-performance Reinforcement Learning in Omniverse](https://www.nvidia.com/gtc/session-catalog/?search=Isaac#/session/1638331324610001KvlV)
+
 - [29/10/2021] Isaac Gym Preview 3 is available
 
 - [NVIDIA Isaac Sim on Omniverse Now Available in Open Beta 21/06/2021](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/)
