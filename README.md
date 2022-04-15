@@ -162,7 +162,10 @@ These RL libraries can support the training with Isaac Gym.
 - [Isaac-ManipulaRL](https://github.com/cypypccpy/Isaac-ManipulaRL) Deep Reinforcement Learning Framework for Manipulator based on NVIDIA's Isaac-gym, Additional add SAC2019 and Reinforcement Learning from Demonstration Algorithm.
 
 - [legged_gym_isaac](https://github.com/chengxuxin/legged_gym_isaac)
+
 - [minimal-isaac-gym](https://github.com/lorenmt/minimal-isaac-gym)
+
+- [DexterousHands](https://github.com/PKU-MARL/DexterousHands): This is a library that provides dual dexterous hand manipulation tasks through Isaac Gym.
 
 
 ## Tutorials & Videos
