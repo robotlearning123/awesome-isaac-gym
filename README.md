@@ -167,6 +167,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [DexterousHands](https://github.com/PKU-MARL/DexterousHands): This is a library that provides dual dexterous hand manipulation tasks through Isaac Gym.
 
+- [Bez_IsaacGym](https://github.com/utra-robosoccer/Bez_IsaacGym): Isaac Gym Reinforcement Learning Environments for humanoid robot Bez
+
 
 ## Tutorials & Videos
 
