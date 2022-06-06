@@ -16,6 +16,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ## Official resource
 
+- [OmniIsaacGymEnvs](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)
+
 - [Isaac Gym](https://developer.nvidia.com/isaac-gym)
 
 - [Isaac SDK](https://docs.nvidia.com/isaac/isaac/doc/index.html)
