@@ -4,6 +4,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ## News
 
+- [02/07/2022] Isaac Gym Preview 4 (1.3.0) is available
+
 - [23/03/2022] GTC2022: [Isaac Gym: The Next Generation — High-performance Reinforcement Learning in Omniverse](https://www.nvidia.com/gtc/session-catalog/?search=Isaac#/session/1638331324610001KvlV)
 
 - [29/10/2021] Isaac Gym Preview 3 is available
