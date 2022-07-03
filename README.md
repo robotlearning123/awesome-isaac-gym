@@ -76,6 +76,10 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ### Manipulation
 
+- [RSS2022] Factory: Fast contact for robotic assembly: [paper](http://doi.acm.org/10.1145/3450626.3459670), [project](https://sites.google.com/nvidia.com/factory), [code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
+
+- [SIGGRAPH2022] ASE: Large-scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters: [paper](https://arxiv.org/abs/2205.01906), [project](https://nv-tlabs.github.io/ASE/), [code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
+
 - [arxiv2021] Data-Driven Operational Space Control for Adaptative and Robust Robot Manipulation: [project](https://cremebrule.github.io/oscar-web/), [paper](https://arxiv.org/abs/2110.00704), [code](https://github.com/nvlabs/oscar)
 
 - [RSS2021@DO-Sim] DO-Sim: Workshop on Deformable Object Simulation in Robotics: [link](https://sites.google.com/nvidia.com/do-sim/home)
