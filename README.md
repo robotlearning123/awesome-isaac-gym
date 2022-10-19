@@ -141,7 +141,7 @@ These RL libraries can support the training with Isaac Gym.
 
 - [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
 
-- [skrl](https://github.com/Toni-SM/skrl)
+- [skrl](https://github.com/Toni-SM/skrl), [paper](https://arxiv.org/abs/2202.03825)
 
 ## Related GitHub Repos
 
@@ -180,6 +180,8 @@ These RL libraries can support the training with Isaac Gym.
 - [Bez_IsaacGym](https://github.com/utra-robosoccer/Bez_IsaacGym): Isaac Gym Reinforcement Learning Environments for humanoid robot Bez
 
 - [Bimanual_offlineRL](https://github.com/ZaneZh/Bimanual_offlineRL)
+
+- [isaac_rover_mars_gym](https://github.com/AAU-RoboticsAutomationGroup/isaac_rover_mars_gym)
 
 
 ## Tutorials & Videos
