@@ -137,6 +137,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 These RL libraries can support the training with Isaac Gym.
 
+- [VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit): Omniverse IndoorKit Extension
+
 - [rl_games](https://github.com/Denys88/rl_games): rl algorithms with isaac gym
 
 - [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
