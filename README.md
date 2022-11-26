@@ -197,6 +197,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [Dofbot Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-DofbotReacher): Dofbot Reacher Reinforcement Learning Sim2Real Environment for Omniverse Isaac Gym/Sim
 
+- [UR10Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-UR10Reacher): UR10 Reacher Reinforcement Learning Sim2Real Environment for Omniverse Isaac Gym/Sim
+
 
 ## Tutorials & Videos
 
