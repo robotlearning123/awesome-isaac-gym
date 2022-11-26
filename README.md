@@ -189,6 +189,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [Rapid Locomotion](https://github.com/Improbable-AI/rapid-locomotion-rl)
 
+- [walk-these-ways](https://github.com/Improbable-AI/walk-these-ways): Go1 Sim-to-Real Locomotion Starter Kit
+
 
 ## Tutorials & Videos
 
