@@ -199,6 +199,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [UR10Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-UR10Reacher): UR10 Reacher Reinforcement Learning Sim2Real Environment for Omniverse Isaac Gym/Sim
 
+- [minimal-isaac-gym](https://github.com/lorenmt/minimal-isaac-gym): A Minimal Example of Isaac Gym with DQN and PPO.
+
 
 ## Tutorials & Videos
 
