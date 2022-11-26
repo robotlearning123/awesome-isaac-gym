@@ -193,6 +193,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [walk-these-ways](https://github.com/Junfeng-Long/walk-these-ways): A1 Sim-to-Real Locomotion Starter Kit
 
+- [shifu](https://github.com/42jaylonw/shifu): Lightweight Isaac Gym Environment Builder for Any Robot
+
 
 ## Tutorials & Videos
 
