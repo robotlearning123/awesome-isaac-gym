@@ -185,6 +185,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [isaac_rover_mars_gym](https://github.com/AAU-RoboticsAutomationGroup/isaac_rover_mars_gym)
 
+- [isaac_rover_2.0](https://github.com/abmoRobotics/isaac_rover_2.0)
+
 
 ## Tutorials & Videos
 
