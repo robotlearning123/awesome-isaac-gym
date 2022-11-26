@@ -187,6 +187,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [isaac_rover_2.0](https://github.com/abmoRobotics/isaac_rover_2.0)
 
+- [Rapid Locomotion](https://github.com/Improbable-AI/rapid-locomotion-rl)
+
 
 ## Tutorials & Videos
 
