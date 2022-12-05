@@ -78,6 +78,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ### Manipulation
 
+- [mvp](https://github.com/ir413/mvp): Masked Visual Pre-training for Robotics
+
 - [RSS2022] Factory: Fast contact for robotic assembly: [paper](http://doi.acm.org/10.1145/3450626.3459670), [project](https://sites.google.com/nvidia.com/factory), [code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
 
 - [SIGGRAPH2022] ASE: Large-scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters: [paper](https://arxiv.org/abs/2205.01906), [project](https://nv-tlabs.github.io/ASE/), [code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
