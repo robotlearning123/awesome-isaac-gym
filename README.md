@@ -205,6 +205,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [minimal-isaac-gym](https://github.com/lorenmt/minimal-isaac-gym): A Minimal Example of Isaac Gym with DQN and PPO.
 
+- [TimeChamber](https://github.com/inspirai/TimeChamber): A Massively Parallel Large Scale Self-Play Framework.
+
 
 ## Tutorials & Videos
 
