@@ -78,6 +78,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ### Manipulation
 
+- [RLAfford](https://github.com/hyperplane-lab/RLAfford): Official Implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning" ICRA 2023.
+
 - [mvp](https://github.com/ir413/mvp): Masked Visual Pre-training for Robotics
 
 - [RSS2022] Factory: Fast contact for robotic assembly: [paper](http://doi.acm.org/10.1145/3450626.3459670), [project](https://sites.google.com/nvidia.com/factory), [code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
