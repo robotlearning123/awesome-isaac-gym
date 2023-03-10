@@ -209,6 +209,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [Rofunc](https://github.com/Skylark0924/Rofunc): The Full Process Python Package for Robot Learning from Demonstration.
 
+- [rl-mpc-locomotion](https://github.com/silvery107/rl-mpc-locomotion): Deep RL for MPC control of Quadruped Robot Locomotion.
+
 
 ## Tutorials & Videos
 
