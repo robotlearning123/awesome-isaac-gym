@@ -207,6 +207,8 @@ These RL libraries can support the training with Isaac Gym.
 
 - [TimeChamber](https://github.com/inspirai/TimeChamber): A Massively Parallel Large Scale Self-Play Framework.
 
+- [Rofunc](https://github.com/Skylark0924/Rofunc): The Full Process Python Package for Robot Learning from Demonstration.
+
 
 ## Tutorials & Videos
 
