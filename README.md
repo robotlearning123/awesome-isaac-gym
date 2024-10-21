@@ -139,6 +139,8 @@ Collect some related resources of NVIDIA Isaac Gym
 
 - [CoRL2018] GPU-Accelerated Robotics Simulation for Distributed Reinforcement Learning: [paper](https://arxiv.org/pdf/1810.05762.pdf), [project](https://sites.google.com/view/accelerated-gpu-simulation/home)
 
+- [arxiv2024] Learning to Swim: Reinforcement Learning for 6-DOF Control of Thruster-driven Autonomous Underwater Vehicles: [paper](https://arxiv.org/abs/2410.00120v1)
+
 ## RL library 
 
 These RL libraries can support the training with Isaac Gym.
