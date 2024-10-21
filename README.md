@@ -215,7 +215,9 @@ These RL libraries can support the training with Isaac Gym.
 
 - [rl-mpc-locomotion](https://github.com/silvery107/rl-mpc-locomotion): Deep RL for MPC control of Quadruped Robot Locomotion.
 
+- [isaac_underwater](https://github.com/leonlime/isaac_underwater): Water and underwater tests using NVIDIA Isaac Sim.
 
+  
 ## Tutorials & Videos
 
 ### RSS2021 Workshop (https://sites.google.com/view/isaacgym/home)
