@@ -22,6 +22,7 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 
 ## News and Updates
 
+- **[Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html):** Isaac Lab is a unified and modular framework for robot learning.
 - **[PhysX 5](https://github.com/NVIDIA-Omniverse/PhysX):** NVIDIA PhysX 5 SDK.
 - **February 7, 2022:** Isaac Gym Preview 4 (1.3.0) is available.
 - **March 23, 2022:** GTC 2022 Session — [Isaac Gym: The Next Generation — High-performance Reinforcement Learning in Omniverse](https://www.nvidia.com/gtc/session-catalog/?search=Isaac#/session/1638331324610001KvlV).
