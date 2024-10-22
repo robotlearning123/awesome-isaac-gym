@@ -166,6 +166,7 @@ Libraries supporting training with Isaac Gym:
 - **[UR10 Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-UR10Reacher):** Sim2Real environment for UR10.
 - **[TimeChamber](https://github.com/inspirai/TimeChamber):** Massively parallel self-play framework.
 - **[RL-MPC-Locomotion](https://github.com/silvery107/rl-mpc-locomotion):** Deep RL for quadruped locomotion.
+- **[Isaac_Underwater](https://github.com/leonlime/isaac_underwater):** Water and underwater tests using NVIDIA Isaac Sim.
 
 ---
 
