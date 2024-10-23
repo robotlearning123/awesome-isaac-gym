@@ -134,7 +134,7 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
   - [Paper](https://arxiv.org/abs/2108.10470)
   - [OpenReview](https://openreview.net/forum?id=fgFBtYgJQX_)
 - **[Learning to Swim](https://arxiv.org/abs/2410.00120v1):** Reinforcement learning for 6-DOF control of thruster-driven AUVs.
-
+- **[MarineGym: Accelerated Training for Underwater Vehicles with High-Fidelity RL Simulation](https://arxiv.org/abs/2410.14117):** Based on Issac Sim
 ---
 
 ## Reinforcement Learning Libraries
