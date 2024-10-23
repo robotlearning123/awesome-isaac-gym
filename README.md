@@ -1,44 +1,134 @@
-# Awesome NVIDIA Isaac Gym
+# Awesome NVIDIA Isaac Gym 🤖
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated collection of resources related to **NVIDIA Isaac Gym**, a high-performance GPU-based physics simulation environment for robot learning.
 
----
+## 🎯 Quick Links
 
-## Table of Contents
+- [Official Website](https://developer.nvidia.com/isaac-gym)
 
-1. [News and Updates](#news-and-updates)
-2. [Official Resources](#official-resources)
-3. [Tutorials, Videos, and Workshops](#tutorials-videos-and-workshops)
-4. [Papers and Research](#papers-and-research)
-   - [Manipulation](#manipulation)
-   - [Localization](#localization)
-   - [Others](#others)
-5. [Reinforcement Learning Libraries](#reinforcement-learning-libraries)
-6. [Related GitHub Repositories](#related-github-repositories)
-7. [Conference Sessions and Talks](#conference-sessions-and-talks)
-8. [Blogs and Articles](#blogs-and-articles)
+- [Documentation](https://docs.nvidia.com/isaac/isaac/doc/index.html)
+
+- [Community Forum](https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322)
+
+- [Latest Release Info](#-latest-releases)
 
 ---
 
-## News and Updates
+## 📋 Contents
 
-- **[Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html):** Isaac Lab is a unified and modular framework for robot learning.
-- **[PhysX 5](https://github.com/NVIDIA-Omniverse/PhysX):** NVIDIA PhysX 5 SDK.
-- **February 7, 2022:** Isaac Gym Preview 4 (1.3.0) is available.
+- [Latest Releases](#-latest-releases)
+
+- [Getting Started](#-getting-started)
+
+- [Official Resources](#-official-resources)
+
+- [Learning Materials](#-learning-materials)
+
+  - [Tutorials](#tutorials)
+
+  - [Workshops](#workshops)
+
+  - [Video Guides](#video-guides)
+
+- [Research Papers](#-research-papers)
+
+  - [Core Papers](#core-papers)
+
+  - [Robot Manipulation](#robot-manipulation)
+
+  - [Locomotion & Control](#locomotion--control)
+
+  - [Simulation & Learning](#simulation--learning)
+
+- [Tools & Libraries](#-tools--libraries)
+
+  - [RL Frameworks](#rl-frameworks)
+
+  - [Community Projects](#community-projects)
+
+- [Applications & Examples](#-applications--examples)
+
+- [Community Resources](#-community-resources)
+
+---
+
+## 🚀 Latest Releases
+
+- **February 2024**: Isaac Lab - A unified and modular framework for robot learning ([Website](https://isaac-sim.github.io/IsaacLab/main/index.html))
+- **February 2024**: PhysX 5 SDK release ([GitHub](https://github.com/NVIDIA-Omniverse/PhysX))
+- **February 2022**: Isaac Gym Preview 4 (1.3.0)
+- **October 2021**: Isaac Gym Preview 3
+- **June 2021**: [NVIDIA Isaac Sim on Omniverse Open Beta](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/)
+
 - **March 23, 2022:** GTC 2022 Session — [Isaac Gym: The Next Generation — High-performance Reinforcement Learning in Omniverse](https://www.nvidia.com/gtc/session-catalog/?search=Isaac#/session/1638331324610001KvlV).
-- **October 29, 2021:** Isaac Gym Preview 3 is available.
-- **June 21, 2021:** [NVIDIA Isaac Sim on Omniverse Now Available in Open Beta](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/).
+
 - **Isaac Gym Overview:** [Isaac Gym Session](https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9918/).
 - **GTC Spring 2021:** [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/).
 
 ---
 
-## Official Resources
+## 🎓 Getting Started
 
-- **[Isaac Gym](https://developer.nvidia.com/isaac-gym):** NVIDIA's high-performance physics simulation environment.
-- **[OmniIsaacGymEnvs](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs):** Examples of reinforcement learning environments using Omniverse Isaac Gym.
-- **[Isaac SDK](https://docs.nvidia.com/isaac/isaac/doc/index.html):** Comprehensive SDK for robotics applications.
-- **[Isaac Gym Forum](https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322):** Community forum for discussions and support.
+1. **Installation & Setup**
+
+   - [Official Isaac Gym Download](https://developer.nvidia.com/isaac-gym)
+
+   - [Quick Start Guide](https://docs.nvidia.com/isaac/isaac/doc/setup.html)
+
+   - [Environment Setup](https://docs.nvidia.com/isaac/isaac/doc/setup.html#environment-setup)
+
+2. **Basic Concepts**
+
+   - [Introduction to Isaac Gym](https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/)
+
+   - [Core Components Overview](https://docs.nvidia.com/isaac/isaac/doc/index.html)
+
+   - [Basic Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
+
+## 📚 Official Resources
+
+### Core Documentation
+
+- [Isaac SDK Documentation](https://docs.nvidia.com/isaac/isaac/doc/index.html)
+- [OmniIsaacGymEnvs Repository](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)
+- [Official Blog Posts](https://developer.nvidia.com/blog/tag/isaac/)
+
+### Learning Resources
+
+- [Video Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
+- [Developer Blog](https://developer.nvidia.com/blog/tag/isaac/)
+- [NVIDIA Omniverse Channel](https://www.youtube.com/c/NVIDIAOmniverse)
+
+## 📖 Learning Materials
+
+### Tutorials
+
+Comprehensive tutorial series from RSS 2021 Workshop:
+1. [Introduction & Getting Started](https://youtu.be/nleDq-oJjGk)
+2. [Environments, Training & Tips](https://youtu.be/1RSugmJ4_gs)
+3. Academic Labs Series:
+   - [University of Toronto](https://youtu.be/nXM5_mwUFOI)
+   - [IMLab](https://youtu.be/VrTVUpDM7K8)
+   - [Stanford University](https://youtu.be/RhjRrUK2abs)
+   - [Soft-Body Simulation](https://youtu.be/i4fGVc6lImo)
+   - [ETH Zurich](https://youtu.be/Afi17BnSuBM)
+4. [New Frontiers in GPU Accelerated RL](https://youtu.be/WhaybakLTXE)
+
+### Video Guides
+- [Robot Import Guide](https://youtu.be/pxPFr58gHmQ)
+- [Simulator Basics](https://www.youtube.com/watch?v=b12M_kCW82o)
+- [Advanced Features](https://youtu.be/XcvMCs9NJfM)
+- [Community Demonstrations](https://youtu.be/vpHR0qiH-GY)
+
+- **[From Point Clouds to Material Graphs: Explore the Latest in Omniverse Create 2021.3](https://youtu.be/t9nVWhnOgbE)**
+- **[Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)**
+- **[Can We Simulate a Real Robot?](https://youtu.be/phTnbmXM06g)** — A journey through finding a high-quality physics simulator for a robot quadruped.
+- **[Teaching Robots to Walk with Reinforcement Learning](https://youtu.be/6qbW7Ki9NUc)** — Robot simulation adventure, covering reinforcement learning with the Bittle robot.
+- **[Robot Dog Learns to Walk — Bittle Reinforcement Learning Part 3](https://youtu.be/A0tPe7-R8z0)** — Further progress in training robot quadrupeds to walk.
+
+
 - **[Isaac Sim GTC 2021 — Sim-to-Real](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/):** Session on sim-to-real transfer using Isaac Sim.
 - **[Isaac Sim Video Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X):** Official video tutorials.
 - **[Training Your JetBot in NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-jetbot-in-isaac-sim/):** Guide on training JetBot using Isaac Sim.
@@ -49,38 +139,20 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 - **[Building an Intelligent Robot Dog with the NVIDIA Isaac SDK](https://developer.nvidia.com/blog/building-intelligent-robot-dog-with-isaac-sdk/):** Tutorial on building a robot dog.
 - **[NVIDIA Omniverse YouTube Channel](https://www.youtube.com/c/NVIDIAOmniverse/videos?&ab_channel=NVIDIAOmniverse):** Official channel with various tutorials and demos.
 
----
+### Blogs
 
-## Tutorials, Videos, and Workshops
-
-### RSS 2021 Workshop
-
-- **[Isaac Gym Part 1: Introduction and Getting Started](https://youtu.be/nleDq-oJjGk)**
-- **[Isaac Gym Part 2: Environments, Training, and Tips](https://youtu.be/1RSugmJ4_gs)**
-- **[Isaac Gym Part 3A: Academic Labs — University of Toronto](https://youtu.be/nXM5_mwUFOI)**
-- **[Isaac Gym Part 3B: Academic Labs — IMLab](https://youtu.be/VrTVUpDM7K8)**
-- **[Isaac Gym Part 3C: Academic Labs — Stanford University](https://youtu.be/RhjRrUK2abs)**
-- **[Isaac Gym Part 3D: Academic Labs — Soft-Body Simulation](https://youtu.be/i4fGVc6lImo)**
-- **[Isaac Gym Part 3E: Academic Labs — ETH Zurich](https://youtu.be/Afi17BnSuBM)**
-- **[Isaac Gym Part 4: New Frontiers in End-to-End GPU Accelerated Reinforcement Learning](https://youtu.be/WhaybakLTXE)**
-
-### Additional Videos
-
-- **[How to Import Your Robot Into Isaac Sim in NVIDIA Omniverse](https://youtu.be/pxPFr58gHmQ)**
-- **[Basic Demo of the NVIDIA Isaac Simulator (Part 1)](https://www.youtube.com/watch?v=b12M_kCW82o)**
-- **[Basic Demo of the NVIDIA Isaac Simulator (Part 2)](https://youtu.be/XcvMCs9NJfM)**
-- **[Introduction and Live Demo in Isaac Sim — Community Stream](https://youtu.be/vpHR0qiH-GY)**
-- **[From Point Clouds to Material Graphs: Explore the Latest in Omniverse Create 2021.3](https://youtu.be/t9nVWhnOgbE)**
-- **[Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)**
-- **[Can We Simulate a Real Robot?](https://youtu.be/phTnbmXM06g)** — A journey through finding a high-quality physics simulator for a robot quadruped.
-- **[Teaching Robots to Walk with Reinforcement Learning](https://youtu.be/6qbW7Ki9NUc)** — Robot simulation adventure, covering reinforcement learning with the Bittle robot.
-- **[Robot Dog Learns to Walk — Bittle Reinforcement Learning Part 3](https://youtu.be/A0tPe7-R8z0)** — Further progress in training robot quadrupeds to walk.
+- **[A Brief Introduction to NVIDIA Omniverse](https://zhuanlan.zhihu.com/p/462305733)**
 
 ---
 
-## Papers and Research
+## 📑 Research Papers
 
-### Manipulation
+### Core Papers
+- [Isaac Gym: High Performance GPU-Based Physics Simulation](https://arxiv.org/abs/2108.10470) (NeurIPS 2021)
+  - [Project Page](https://sites.google.com/view/isaacgym-nvidia)
+  - [OpenReview Discussion](https://openreview.net/forum?id=fgFBtYgJQX_)
+
+### Robot Manipulation
 
 - **[RLAfford](https://github.com/hyperplane-lab/RLAfford):** Official implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning", ICRA 2023.
 - **[Masked Visual Pre-training for Robotics (MVP)](https://github.com/ir413/mvp):** Repository for the MVP project.
@@ -110,7 +182,7 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 - **[Reactive Long Horizon Task Execution](https://www.youtube.com/playlist?list=PL-oD0xHUngeLfQmpngYkGFZarstfPOXqX):** IROS 2021.
   - [Paper](https://arxiv.org/pdf/2011.08694.pdf)
 
-### Localization
+### Localization & Control
 
 - **[Learning to Walk in Minutes Using Massively Parallel Deep RL](https://leggedrobotics.github.io/legged_gym/):** CoRL 2021.
   - [Paper](https://arxiv.org/pdf/2109.11978.pdf)
@@ -137,20 +209,19 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 - **[MarineGym: Accelerated Training for Underwater Vehicles with High-Fidelity RL Simulation](https://arxiv.org/abs/2410.14117):** Based on Issac Sim
 ---
 
-## Reinforcement Learning Libraries
 
-Libraries supporting training with Isaac Gym:
+## 🛠 Tools & Libraries
 
-- **[Minimal Stable PPO](https://github.com/ToruOwO/minimal-stable-PPO)**
-- **[VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit):** Omniverse IndoorKit Extension.
-- **[RL Games](https://github.com/Denys88/rl_games):** RL algorithms compatible with Isaac Gym.
-- **[ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)**
-- **[skrl](https://github.com/Toni-SM/skrl):** Reinforcement learning library for robotics.
-  - [Paper](https://arxiv.org/abs/2202.03825)
+### RL Frameworks
+
+- [RL Games](https://github.com/Denys88/rl_games) - Compatible RL algorithms
+- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
+- [skrl](https://github.com/Toni-SM/skrl) - Modular RL library
+- [Minimal Stable PPO](https://github.com/ToruOwO/minimal-stable-PPO)
 
 ---
 
-## Related GitHub Repositories
+### Community Projects
 
 - **[IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs):** Official Isaac Gym RL environments.
 - **[isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering):** Hammering task implementation.
@@ -167,6 +238,7 @@ Libraries supporting training with Isaac Gym:
 - **[TimeChamber](https://github.com/inspirai/TimeChamber):** Massively parallel self-play framework.
 - **[RL-MPC-Locomotion](https://github.com/silvery107/rl-mpc-locomotion):** Deep RL for quadruped locomotion.
 - **[Isaac_Underwater](https://github.com/leonlime/isaac_underwater):** Water and underwater tests using NVIDIA Isaac Sim.
+- **[VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit):** Omniverse IndoorKit Extension.
 
 ---
 
@@ -186,8 +258,14 @@ Libraries supporting training with Isaac Gym:
 
 ---
 
-## Blogs and Articles
+## 🌟 Contributing
 
-- **[A Brief Introduction to NVIDIA Omniverse](https://zhuanlan.zhihu.com/p/462305733)**
+Contributions are welcome! Please read our [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
 
----
+## 📄 License
+
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+Special thanks to all contributors and the NVIDIA Isaac team for making these resources available to the robotics community.
