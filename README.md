@@ -208,6 +208,7 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - **[Learning to Swim](https://arxiv.org/abs/2410.00120v1):** Reinforcement learning for 6-DOF control of thruster-driven AUVs.
 - **[MarineGym: Accelerated Training for Underwater Vehicles with High-Fidelity RL Simulation](https://arxiv.org/abs/2410.14117):** Based on Issac Sim
 - **[space_robotics_bench](https://github.com/AndrejOrsula/space_robotics_bench)** Space Robotics Bench
+- **[Humanoid-Gym](https://github.com/roboterax/humanoid-gym):** Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer
 
 
 ## 🛠 Tools & Libraries
