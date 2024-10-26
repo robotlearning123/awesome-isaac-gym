@@ -239,6 +239,8 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - **[RL-MPC-Locomotion](https://github.com/silvery107/rl-mpc-locomotion):** Deep RL for quadruped locomotion.
 - **[Isaac_Underwater](https://github.com/leonlime/isaac_underwater):** Water and underwater tests using NVIDIA Isaac Sim.
 - **[VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit):** Omniverse IndoorKit Extension.
+- **[agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train):** The reinforcement learning training code for AgiBot X1.
+- 
 
 ---
 
