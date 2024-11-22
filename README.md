@@ -155,6 +155,8 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
 
 ### Locomotion
+- [RSS2024] Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion: [paper](https://arxiv.org/abs/2401.17583), [code](https://github.com/LeCAR-Lab/ABS)
+
 - [RSS2022] Rapid Locomotion via Reinforcement Learning: [paper](https://arxiv.org/pdf/2205.02824), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/Improbable-AI/rapid-locomotion-rl/tree/main)
 
 - [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
