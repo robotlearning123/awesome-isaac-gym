@@ -78,6 +78,10 @@ Collect some related resources of NVIDIA Isaac Gym
 
 ### Manipulation
 
+- [transic](https://github.com/transic-robot/transic): Official Implementation of "TRANSIC: Sim-to-Real Policy Transfer by Learning from Online Correction" CoRL 2024.
+
+- [Robot Synesthesia](https://github.com/YingYuan0414/in-hand-rotation): Official Implementation of "Robot Synesthesia: In-Hand Manipulation with Visuotactile Sensing" ICRA 2024.
+
 - [RLAfford](https://github.com/hyperplane-lab/RLAfford): Official Implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning" ICRA 2023.
 
 - [mvp](https://github.com/ir413/mvp): Masked Visual Pre-training for Robotics
@@ -112,7 +116,7 @@ Collect some related resources of NVIDIA Isaac Gym
 
 - [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
 
-### Localization
+### Locomotion
 - [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
   
 - [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
