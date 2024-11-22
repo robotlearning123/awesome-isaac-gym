@@ -83,9 +83,17 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 
    - [Introduction to Isaac Gym](https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/)
 
+   - [transic](https://github.com/transic-robot/transic): Official Implementation of "TRANSIC: Sim-to-Real Policy Transfer by Learning from Online Correction" CoRL 2024.
+
+   - [Robot Synesthesia](https://github.com/YingYuan0414/in-hand-rotation): Official Implementation of "Robot Synesthesia: In-Hand Manipulation with Visuotactile Sensing" ICRA 2024.
+
+   - [RLAfford](https://github.com/hyperplane-lab/RLAfford): Official Implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning" ICRA 2023.
+
    - [Core Components Overview](https://docs.nvidia.com/isaac/isaac/doc/index.html)
 
    - [Basic Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
+
+
 
 ## 📚 Official Resources
 
@@ -138,6 +146,28 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - **[Developing Robotics Applications in Python with NVIDIA Isaac SDK](https://developer.nvidia.com/blog/developing-robotics-applications-in-python-with-isaac-sdk/):** Guide on using Isaac SDK with Python.
 - **[Building an Intelligent Robot Dog with the NVIDIA Isaac SDK](https://developer.nvidia.com/blog/building-intelligent-robot-dog-with-isaac-sdk/):** Tutorial on building a robot dog.
 - **[NVIDIA Omniverse YouTube Channel](https://www.youtube.com/c/NVIDIAOmniverse/videos?&ab_channel=NVIDIAOmniverse):** Official channel with various tutorials and demos.
+
+
+- [ICRA2021] Sim-to-Real for Robotic Tactile Sensing via Physics-Based Simulation and Learned Latent Projections: [paper](https://arxiv.org/pdf/2103.16747.pdf)
+
+- [2021] DeformerNet: A Deep Learning Approach to 3D Deformable Object Manipulation: [paper](https://arxiv.org/pdf/2107.08067.pdf)
+
+- [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
+
+### Locomotion
+- [RSS2022] Rapid Locomotion via Reinforcement Learning: [paper](https://arxiv.org/pdf/2205.02824), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/Improbable-AI/rapid-locomotion-rl/tree/main)
+
+- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
+
+- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
+  
+- [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
+
+- [2021] GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model: [project](https://www.pair.toronto.edu/glide-quadruped/), [paper](https://arxiv.org/abs/2104.09771)
+
+- [CoRL2020] Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion: [paper](https://arxiv.org/abs/2009.10019), [video](https://youtu.be/JJOmFZKpYTo), [project](https://sites.google.com/view/learn-contact-controller/home), [blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
+
+- [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
 
 ### Blogs
 
@@ -220,7 +250,25 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - [skrl](https://github.com/Toni-SM/skrl) - Modular RL library
 - [Minimal Stable PPO](https://github.com/ToruOwO/minimal-stable-PPO)
 
----
+
+- [skrl](https://github.com/Toni-SM/skrl), [paper](https://arxiv.org/abs/2202.03825)
+  
+- [RSL RL](https://github.com/leggedrobotics/rsl_rl)
+
+## Related GitHub Repos
+
+- [IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
+
+- [isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering)
+
+- [isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils): Developed by the CMU Intelligent Autonomous Manipulation Lab
+
+- [isaacgym_sandbox](https://github.com/kploeger/isaacgym_sandbox)
+
+- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym
+
+- [dvrk_IssacGym](https://github.com/baotruyenthach/dvrk_IssacGym), [link](https://github.com/baotruyenthach/dvrk_grasp_pipeline_isaacgym)
+
 
 ### Community Projects
 
