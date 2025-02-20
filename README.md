@@ -56,6 +56,7 @@ A curated collection of resources related to **NVIDIA Isaac Gym**, a high-perfor
 
 ## 🚀 Latest Releases
 
+- **March 2024**: HumanoidVerse - A Multi-simulator Framework for Humanoid Robot Learning ([GitHub](https://github.com/LeCAR-Lab/HumanoidVerse))
 - **February 2024**: Isaac Lab - A unified and modular framework for robot learning ([Website](https://isaac-sim.github.io/IsaacLab/main/index.html))
 - **February 2024**: PhysX 5 SDK release ([GitHub](https://github.com/NVIDIA-Omniverse/PhysX))
 - **February 2022**: Isaac Gym Preview 4 (1.3.0)
@@ -169,6 +170,12 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 
 - [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
 
+- **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse):** A Multi-simulator Framework for Humanoid Robot Learning (2024)
+  - Features multi-simulator support (Isaac Gym, Flex, MuJoCo)
+  - Includes diverse humanoid models and environments
+  - Provides comprehensive benchmarking tools
+  - Enables efficient parallel training across simulators
+
 - **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
   - [Paper](https://arxiv.org/abs/2403.14864)
   - Features hierarchical imitation learning framework
@@ -239,6 +246,12 @@ Comprehensive tutorial series from RSS 2021 Workshop:
   - Includes procedural scene and trajectory generation
 
 ### Localization & Control
+
+- **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse):** A Multi-simulator Framework for Humanoid Robot Learning (2024)
+  - Features multi-simulator support (Isaac Gym, Flex, MuJoCo)
+  - Includes diverse humanoid models and environments
+  - Provides comprehensive benchmarking tools
+  - Enables efficient parallel training across simulators
 
 - **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
   - [Paper](https://arxiv.org/abs/2403.14864)
