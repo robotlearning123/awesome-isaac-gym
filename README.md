@@ -161,8 +161,6 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 
 - [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
 
-- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
-  
 - [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
 
 - [2021] GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model: [project](https://www.pair.toronto.edu/glide-quadruped/), [paper](https://arxiv.org/abs/2104.09771)
@@ -170,6 +168,19 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - [CoRL2020] Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion: [paper](https://arxiv.org/abs/2009.10019), [video](https://youtu.be/JJOmFZKpYTo), [project](https://sites.google.com/view/learn-contact-controller/home), [blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
 
 - [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
+
+- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
+  - [Paper](https://arxiv.org/abs/2403.14864)
+  - Features hierarchical imitation learning framework
+  - Enables robust humanoid locomotion in challenging environments
+  - Demonstrates successful real-world deployment
+
+- **[ASAP](https://agile.human2humanoid.com/):** Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills (2025)
+  - [Paper](https://arxiv.org/abs/2502.01143)
+  - Features two-stage framework for sim-to-real transfer
+  - Enables highly agile humanoid motions like kicks and jumps
+  - Successfully deployed on real Unitree G1 humanoid robot
+  - Demonstrates significant improvement over SysID and DR baselines
 
 ### Blogs
 
@@ -213,21 +224,51 @@ Comprehensive tutorial series from RSS 2021 Workshop:
   - [Paper](https://arxiv.org/pdf/2103.16772.pdf)
 - **[Reactive Long Horizon Task Execution](https://www.youtube.com/playlist?list=PL-oD0xHUngeLfQmpngYkGFZarstfPOXqX):** IROS 2021.
   - [Paper](https://arxiv.org/pdf/2011.08694.pdf)
+- **[RoboDuet](https://locomanip-duet.github.io/):** Learning a Cooperative Policy for Whole-body Legged Loco-Manipulation (2024)
+  - [Paper](https://arxiv.org/abs/2403.17367)
+  - [Code](https://github.com/Robo-Duet/RoboDuet)
+  - Features two-policy framework for locomotion and manipulation
+  - Achieves 23% improvement in success rate for mobile manipulation tasks
+  - Zero-shot transfer from Go1+ARX5 to Go2+ARX5
+
+- **[Kitchen Worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds):** Long-horizon Task-and-Motion-Planning (TAMP) in Kitchen Scenes (2024)
+  - [Paper](https://arxiv.org/abs/2410.02193)
+  - [Code](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds)
+  - Library of TAMP problems in kitchen and household scenes
+  - Integrates VLM (e.g. GPT-4v) guidance for planning
+  - Includes procedural scene and trajectory generation
 
 ### Localization & Control
+
+- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
+  - [Paper](https://arxiv.org/abs/2403.14864)
+  - Features hierarchical imitation learning framework
+  - Enables robust humanoid locomotion in challenging environments
+  - Demonstrates successful real-world deployment
+
+- **[ASAP](https://agile.human2humanoid.com/):** Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills (2025)
+  - [Paper](https://arxiv.org/abs/2502.01143)
+  - Features two-stage framework for sim-to-real transfer
+  - Enables highly agile humanoid motions like kicks and jumps
+  - Successfully deployed on real Unitree G1 humanoid robot
+  - Demonstrates significant improvement over SysID and DR baselines
 
 - **[Learning to Walk in Minutes Using Massively Parallel Deep RL](https://leggedrobotics.github.io/legged_gym/):** CoRL 2021.
   - [Paper](https://arxiv.org/pdf/2109.11978.pdf)
   - [Code](https://github.com/leggedrobotics/legged_gym)
+
 - **[Dynamics Randomization Revisited](https://www.pair.toronto.edu/understanding-dr/):** A case study for quadrupedal locomotion.
   - [Paper](https://arxiv.org/abs/2011.02404)
   - [Video](https://youtu.be/ckdHWWpfSpk)
+
 - **[GLiDE: Generalizable Quadrupedal Locomotion](https://www.pair.toronto.edu/glide-quadruped/):**
   - [Paper](https://arxiv.org/abs/2104.09771)
+
 - **[Learning a Contact-Adaptive Controller](https://sites.google.com/view/learn-contact-controller/home):** For robust, efficient legged locomotion.
   - [Paper](https://arxiv.org/abs/2009.10019)
   - [Video](https://youtu.be/JJOmFZKpYTo)
   - [Blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
+
 - **[Learning a State Representation and Navigation](https://arxiv.org/pdf/2103.04351.pdf):** In cluttered and dynamic environments.
 
 ### Others
