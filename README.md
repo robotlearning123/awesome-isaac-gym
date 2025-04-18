@@ -124,6 +124,7 @@ Comprehensive tutorial series from RSS 2021 Workshop:
    - [Soft-Body Simulation](https://youtu.be/i4fGVc6lImo)
    - [ETH Zurich](https://youtu.be/Afi17BnSuBM)
 4. [New Frontiers in GPU Accelerated RL](https://youtu.be/WhaybakLTXE)
+5. [lycheeai-hub](https://lycheeai-hub.com/)
 
 ### Video Guides
 - [Robot Import Guide](https://youtu.be/pxPFr58gHmQ)
