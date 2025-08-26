@@ -366,6 +366,14 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 
 ---
 
+## 🤖 Automated Research Updates
+
+- Source: arXiv queries for “isaac gym”, “omni isaac”, and “isaac lab”.
+- Schedule: weekly (Mon 09:00 UTC) or manual via Actions “Research Bot”.
+- Output: updates content between the ‘research-bot:start’ and ‘research-bot:end’ markers in this README.
+- Safety: opens a Draft PR labeled “needs-approval”; nothing merges automatically.
+- Config: edit `.research-bot.yaml` to adjust queries and limits.
+
 ## 🌟 Contributing
 
 Contributions are welcome! Please read our [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.

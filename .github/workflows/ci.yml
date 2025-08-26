@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, "**" ]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dev deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest ruff
+      - name: Ruff
+        run: |
+          ruff --version
+          ruff check awesome-isaac-gym/scripts awesome-isaac-gym/tests
+      - name: Pytest
+        run: |
+          pytest -q awesome-isaac-gym/tests
+
+  bot-idempotency:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' && startsWith(github.head_ref, 'research-bot/') }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run bot and verify no diff
+        run: |
+          python awesome-isaac-gym/scripts/research_bot.py || true
+          git status --porcelain
+          # Ensure the bot is idempotent for its own PR branch
+          if ! git diff --quiet; then
+            echo "Bot produced changes on its own PR branch. Please re-run the bot locally and commit the updates." >&2
+            exit 1
+          fi
+

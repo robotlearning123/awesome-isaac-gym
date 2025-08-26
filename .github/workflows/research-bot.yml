@@ -1,0 +1,58 @@
+name: Research Bot
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Every Monday 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Run research bot
+        run: |
+          python scripts/research_bot.py
+
+      - name: Create Pull Request (draft)
+        if: |
+          github.event_name == 'workflow_dispatch' ||
+          github.event_name == 'schedule'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: research-bot/auto-update
+          commit-message: "chore(research): update latest research section"
+          title: "chore(research): update latest research"
+          body: |
+            This automated PR updates the Latest Research section with newly published arXiv papers related to Isaac Gym / Isaac Lab.
+
+            - Created by Research Bot on a schedule or manual dispatch.
+            - Marked as draft and requires maintainer approval to merge.
+            - Content between markers is managed automatically:
+              `<!-- research-bot:start -->` … `<!-- research-bot:end -->`.
+
+            If the changes look good, convert this PR from Draft and merge.
+          labels: |
+            bot
+            needs-approval
+          draft: true
+

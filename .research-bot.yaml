@@ -1,0 +1,28 @@
+"""
+Configuration for the Research Bot.
+If PyYAML is not available in your Actions runner, this file will be ignored
+and defaults in the script will be used. The provided workflow installs PyYAML.
+"""
+
+# Search queries for arXiv (joined with OR across queries)
+queries:
+  - "\"isaac gym\""
+  - omniisaac
+  - "\"isaac lab\""
+  - "\"omni isaac\""
+
+# Look back this many days for new papers
+days_back: 14
+
+# Max results fetched per query from arXiv API
+max_results: 25
+
+# Max items to include in the README section per run
+output_count: 10
+
+# README path to update
+readme_path: README.md
+
+# Section title to add/update. Content between markers is managed by the bot.
+section_title: "## 🧠 Latest Research (auto-updated)"
+
