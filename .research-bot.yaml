@@ -1,8 +1,6 @@
-"""
-Configuration for the Research Bot.
-If PyYAML is not available in your Actions runner, this file will be ignored
-and defaults in the script will be used. The provided workflow installs PyYAML.
-"""
+# Configuration for the Research Bot.
+# If PyYAML is not available in your Actions runner, this file will be ignored
+# and defaults in the script will be used. The provided workflow installs PyYAML.
 
 # Search queries for arXiv (joined with OR across queries)
 queries:
