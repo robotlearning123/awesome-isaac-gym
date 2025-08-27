@@ -20,10 +20,10 @@ jobs:
       - name: Ruff
         run: |
           ruff --version
-          ruff check awesome-isaac-gym/scripts awesome-isaac-gym/tests
+          ruff check scripts tests
       - name: Pytest
         run: |
-          pytest -q awesome-isaac-gym/tests
+          pytest -q tests
 
   bot-idempotency:
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
           python-version: '3.11'
       - name: Run bot and verify no diff
         run: |
-          python awesome-isaac-gym/scripts/research_bot.py || true
+          python scripts/research_bot.py || true
           git status --porcelain
           # Ensure the bot is idempotent for its own PR branch
           if ! git diff --quiet; then

@@ -2,12 +2,18 @@
 import datetime as dt
 import argparse
 import json
+import logging
 import os
 import re
 import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from typing import Dict, List, Set, Tuple, Optional
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 ARXIV_API = "http://export.arxiv.org/api/query"
@@ -15,7 +21,7 @@ MARKER_START = "<!-- research-bot:start -->"
 MARKER_END = "<!-- research-bot:end -->"
 
 
-def load_config(path: str) -> dict:
+def load_config(path: str) -> Dict[str, any]:
     cfg = {
         "queries": [
             "\"isaac gym\"",
@@ -32,25 +38,42 @@ def load_config(path: str) -> dict:
     if os.path.exists(path):
         try:
             import yaml  # type: ignore
-        except Exception:
-            # Minimal YAML parser fallback not implemented; use defaults
+        except ImportError:
+            logger.warning("PyYAML not available, using default configuration")
             return cfg
         else:
-            with open(path, "r", encoding="utf-8") as f:
-                user_cfg = yaml.safe_load(f) or {}
-            cfg.update({k: v for k, v in user_cfg.items() if v is not None})
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    user_cfg = yaml.safe_load(f) or {}
+                cfg.update({k: v for k, v in user_cfg.items() if v is not None})
+            except yaml.YAMLError as e:
+                logger.error(f"Failed to parse YAML config: {e}")
+                return cfg
+            except IOError as e:
+                logger.error(f"Failed to read config file: {e}")
+                return cfg
     return cfg
 
 
-def iso_date(s: str) -> dt.date:
-    # arXiv returns e.g. 2024-08-21T12:34:56Z
-    return dt.datetime.fromisoformat(s.replace("Z", "+00:00")).date()
+def iso_date(s: str) -> Optional[dt.date]:
+    """Parse ISO date string from arXiv (e.g., 2024-08-21T12:34:56Z)."""
+    try:
+        return dt.datetime.fromisoformat(s.replace("Z", "+00:00")).date()
+    except (ValueError, AttributeError) as e:
+        logger.warning(f"Failed to parse date '{s}': {e}")
+        return None
 
 
-def parse_arxiv_feed(xml_bytes: bytes) -> list[dict]:
-    root = ET.fromstring(xml_bytes)
+def parse_arxiv_feed(xml_bytes: bytes) -> List[Dict[str, any]]:
+    """Parse arXiv Atom feed XML and extract paper information."""
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError as e:
+        logger.error(f"Failed to parse XML: {e}")
+        return []
+    
     ns = {"atom": "http://www.w3.org/2005/Atom"}
-    papers: list[dict] = []
+    papers: List[Dict[str, any]] = []
     for entry in root.findall("atom:entry", ns):
         eid = entry.findtext("atom:id", default="", namespaces=ns)
         title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip()
@@ -91,44 +114,58 @@ def parse_arxiv_feed(xml_bytes: bytes) -> list[dict]:
     return papers
 
 
-def fetch_arxiv(query: str, max_results: int) -> list[dict]:
+def fetch_arxiv(query: str, max_results: int) -> List[Dict[str, any]]:
     params = {
         "search_query": f"all:{query}",
         "sortBy": "submittedDate",
         "sortOrder": "descending",
         "max_results": str(max_results),
     }
+    """Fetch papers from arXiv API for the given query."""
     url = f"{ARXIV_API}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": "research-bot/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = resp.read()
-    return parse_arxiv_feed(data)
+    
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = resp.read()
+        return parse_arxiv_feed(data)
+    except urllib.error.URLError as e:
+        logger.error(f"Network error fetching arXiv data for query '{query}': {e}")
+        return []
+    except TimeoutError as e:
+        logger.error(f"Timeout fetching arXiv data for query '{query}': {e}")
+        return []
 
 
-def load_seen(path: str) -> set[str]:
+def load_seen(path: str) -> Set[str]:
     if not os.path.exists(path):
         return set()
-    with open(path, "r", encoding="utf-8") as f:
-        try:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        except Exception:
-            return set()
+    except (json.JSONDecodeError, IOError) as e:
+        logger.warning(f"Failed to load state file: {e}")
+        return set()
     return set(data.get("arxiv_ids", []))
 
 
-def save_seen(path: str, ids: set[str]) -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump({"arxiv_ids": sorted(ids)}, f, indent=2)
+def save_seen(path: str, ids: Set[str]) -> None:
+    """Save seen paper IDs to state file."""
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"arxiv_ids": sorted(ids)}, f, indent=2)
+    except IOError as e:
+        logger.error(f"Failed to save state file: {e}")
 
 
-def extract_existing_ids_from_readme(readme_text: str) -> set[str]:
+def extract_existing_ids_from_readme(readme_text: str) -> Set[str]:
     # Capture IDs like 2401.00001 possibly followed by version or .pdf, but only keep the ID
     pattern = re.compile(r"arxiv\.org/(?:abs|pdf)/([0-9]+\.[0-9]+)(?:v\d+)?(?:\.pdf)?")
     return set(m.group(1) for m in pattern.finditer(readme_text))
 
 
-def render_bullets(papers: list[dict]) -> str:
+def render_bullets(papers: List[Dict[str, any]]) -> str:
     lines = []
     for p in papers:
         authors = ", ".join(p.get("authors", [])[:3])
@@ -141,7 +178,7 @@ def render_bullets(papers: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def update_readme(readme_path: str, section_title: str, bullets_block: str) -> tuple[str, bool]:
+def update_readme(readme_path: str, section_title: str, bullets_block: str) -> Tuple[str, bool]:
     changed = False
     if not os.path.exists(readme_path):
         return "", False
@@ -191,10 +228,12 @@ def main() -> int:
     collected: dict[str, dict] = {}
     for q in queries:
         try:
-            for p in fetch_arxiv(q, max_results):
+            papers = fetch_arxiv(q, max_results)
+            for p in papers:
                 collected[p["id"]] = p
+            logger.info(f"Fetched {len(papers)} papers for query '{q}'")
         except Exception as e:
-            print(f"Warning: query '{q}' failed: {e}", file=sys.stderr)
+            logger.error(f"Unexpected error for query '{q}': {e}", exc_info=True)
 
     if not collected:
         print("No papers fetched; exiting.")
