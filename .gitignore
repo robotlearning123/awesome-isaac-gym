@@ -1,34 +1,17 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-*.pyo
 *.pyc
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.env
-.venv
-venv/
-ENV/
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 .DS_Store
 
-# Bot state
-.bot/state.json
-
-# Logs
+# Runtime
+.bot/
 *.log
-logs/
+
+# Testing (if needed later)
+.pytest_cache/
+.coverage
