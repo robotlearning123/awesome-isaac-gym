@@ -2,7 +2,7 @@ name: Research Bot
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # Every Monday 09:00 UTC
+    - cron: '0 9 * * *' # Daily at 09:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -45,7 +45,7 @@ jobs:
           body: |
             This automated PR updates the Latest Research section with newly published arXiv papers related to Isaac Gym / Isaac Lab.
 
-            - Created by Research Bot on a schedule or manual dispatch.
+            - Created by Research Bot (runs daily at 09:00 UTC)
             - Marked as draft and requires maintainer approval to merge.
             - Content between markers is managed automatically:
               `<!-- research-bot:start -->` … `<!-- research-bot:end -->`.

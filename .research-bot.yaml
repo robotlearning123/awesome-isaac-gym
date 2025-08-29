@@ -9,8 +9,8 @@ queries:
   - "\"isaac lab\""
   - "\"omni isaac\""
 
-# Look back this many days for new papers
-days_back: 14
+# Look back this many days for new papers (daily check)
+days_back: 7
 
 # Max results fetched per query from arXiv API
 max_results: 25
