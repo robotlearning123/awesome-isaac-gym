@@ -385,3 +385,10 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 ## 🙏 Acknowledgments
 
 Special thanks to all contributors and the NVIDIA Isaac team for making these resources available to the robotics community.
+
+## 🧠 Latest Research (auto-updated)
+
+<!-- research-bot:start -->
+- [HumanoidVerse: A Versatile Humanoid for Vision-Language Guided
+  Multi-Object Rearrangement](https://arxiv.org/abs/2508.16943) — Haozhuo Zhang, Jingkai Sun, Michele Caprio, et al. (2025-08-23) [pdf](https://arxiv.org/pdf/2508.16943.pdf)
+<!-- research-bot:end -->
