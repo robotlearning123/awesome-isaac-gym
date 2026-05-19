@@ -159,15 +159,11 @@
 
 #### 🌐 Community
 
-- **[RLAfford](https://github.com/hyperplane-lab/RLAfford)** — End-to-end Affordance Learning with RL (ICRA 2023)
-- **[Factory](https://sites.google.com/nvidia.com/factory)** — Fast Contact for Robotic Assembly (RSS 2022)
-- **[ASE](https://nv-tlabs.github.io/ASE/)** — Adversarial Skill Embeddings (SIGGRAPH 2022)
-- **[OSCAR](https://cremebrule.github.io/oscar-web/)** — Operational Space Control
-- **[DefGraspSim](https://sites.google.com/nvidia.com/defgraspsim)** — Deformable object grasping
-- **[STORM](https://sites.google.com/view/manipulation-mpc)** — Fast Joint-Space MPC (CoRL 2021)
-- **[robosuite](https://github.com/ARISE-Initiative/robosuite)** — Modular simulation framework for robot learning
-- **[RoboDuet](https://locomanip-duet.github.io/)** — Whole-body Legged Loco-Manipulation (2024)
-- **[Kitchen Worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds)** — Long-horizon TAMP (2024)
+- **[RLAfford](https://github.com/hyperplane-lab/RLAfford)** — End-to-end Affordance Learning with RL (ICRA 2023) — Isaac Gym
+- **[Factory](https://research.nvidia.com/publication/2022-05_factory-fast-contact-robotic-assembly)** `[OFFICIAL]` — Fast Contact for Robotic Assembly (NVIDIA, RSS 2022) — Isaac Gym
+- **[ASE: Adversarial Skill Embeddings](https://research.nvidia.com/labs/toronto-ai/ASE/)** `[OFFICIAL]` — NVIDIA Toronto AI Lab (SIGGRAPH 2022) — Isaac Gym
+- **[DexterousHands](https://github.com/PKU-MARL/DexterousHands)** — Bimanual dexterous manipulation benchmark on Isaac Gym
+- **[RoboDuet](https://github.com/locomanip-duet/RoboDuet)** — Whole-body Legged Loco-Manipulation (Isaac Gym Preview 4, 2024)
 
 ### Mobile / Wheeled
 
@@ -185,16 +181,14 @@
 
 #### 🌐 Community
 
-- **[OceanSim](https://github.com/umfieldrobotics/OceanSim)** — Underwater simulation on Isaac Sim + Omniverse
-- **[MarineGym](https://arxiv.org/abs/2410.14117)** — Accelerated training for underwater vehicles
-- **[Learning to Swim](https://arxiv.org/abs/2410.00120v1)** — RL for 6-DOF thruster-driven AUVs
-- **[isaac_underwater](https://github.com/Field-Robotics-Japan/isaac_underwater)** — Underwater sim integrations
+- **[OceanSim](https://github.com/umfieldrobotics/OceanSim)** — Underwater simulation on Isaac Sim + Omniverse (verified Isaac Sim)
+- **[MarineGym](https://arxiv.org/abs/2410.14117)** — Accelerated training for underwater vehicles *(paper claims Isaac Sim; verify before adding to live repo)*
 
 ### Space Robotics
 
 #### 🌐 Community
 
-- **[Space Robotics Bench](https://github.com/AndrejOrsula/space_robotics_bench)** — Space-domain benchmark on Isaac Sim
+- **[Space Robotics Bench](https://github.com/AndrejOrsula/space_robotics_bench)** — Space-domain benchmark (verified Isaac Sim per official docs)
 
 ### Surgical Robotics
 
@@ -206,7 +200,7 @@
 
 #### 🌐 Community
 
-- **[Aigen](https://aigen.io/)** — Agricultural robots using Cosmos + Isaac Sim, Jetson Orin edge inference
+- **[Aigen](https://www.aigen.io/)** — Agricultural robots using Cosmos + Isaac Sim, Jetson Orin edge inference (cited in [NVIDIA Robotics Week blog](https://blogs.nvidia.com/blog/national-robotics-week-2026/))
 
 ---
 
@@ -221,20 +215,14 @@
 
 #### 🌐 Community
 
-- **[RL Games](https://github.com/Denys88/rl_games)** — High-performance RL on Isaac Gym/Lab
-- **[Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)** — PyTorch RL implementations
-- **[Tianshou](https://github.com/thu-ml/tianshou)** — Modular RL platform
+- **[RL Games](https://github.com/Denys88/rl_games)** — High-performance RL natively used with Isaac Gym/Lab
 
 ### Imitation Learning
 
 #### 🏛️ Official
 
 - **[Isaac Lab Mimic](https://developer.nvidia.com/isaac/lab)** `[OFFICIAL]` — Imitation learning workflows
-- **[Isaac Teleop](https://developer.nvidia.com/isaac)** `[OFFICIAL]` — Demonstration data capture
-
-#### 🌐 Community
-
-- **[robosuite](https://github.com/ARISE-Initiative/robosuite)** — Demonstrations + imitation learning
+- **[Isaac Teleop](https://developer.nvidia.com/isaac)** `[OFFICIAL]` — Demonstration data capture (XR headsets, MANUS gloves)
 
 ### Foundation Models / World Models
 
