@@ -57,7 +57,7 @@
 - **[NVIDIA Isaac Platform Hub](https://developer.nvidia.com/isaac)** — Top-level entry point
 - **[Install Isaac Sim + Isaac Lab on DGX Spark](https://build.nvidia.com/spark/isaac)** — Reference install
 - **[Isaac Lab on NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)** — Container images
-- **[NVIDIA Developer Blog · Isaac tag](https://developer.nvidia.com/blog/tag/isaac/)** — Latest official tutorials
+- **[NVIDIA Developer Blog](https://developer.nvidia.com/blog/)** `[OFFICIAL]` — Filter by "Robotics" / "Isaac" for latest tutorials
 
 ### 🌐 Community Starters
 
@@ -109,7 +109,7 @@
 
 - **[Isaac ROS](https://github.com/NVIDIA-ISAAC-ROS)** `[OFFICIAL]` — CUDA-accelerated ROS 2 packages (NITROS). **Latest: 4.4** (2026-02-19) with DGX Spark + JetPack 7.1 support.
 - **[Isaac ROS Documentation](https://nvidia-isaac-ros.github.io/)** `[OFFICIAL]`
-- **[NVIDIA Jetson Thor](https://developer.nvidia.com/embedded/jetson-thor)** `[OFFICIAL]` — Edge robot computing platform (Blackwell GPU)
+- **[NVIDIA Jetson Thor](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/)** `[OFFICIAL]` — Edge robot computing platform (Blackwell GPU)
 
 ---
 
@@ -131,7 +131,7 @@
 
 - **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse)** — Multi-simulator framework for humanoid robot learning
 - **[ASAP](https://agile.human2humanoid.com/)** — Aligning Simulation and Real-World Physics for Agile Humanoid Whole-Body Skills (LeCAR Lab, 2025)
-- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/)** — Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
+- **[HIMLoco](https://github.com/OpenRobotLab/HIMLoco)** — Hierarchical Imitation Learning for Robust Humanoid Locomotion (OpenRobotLab/InternRobotics, Isaac Gym Preview 4)
 - **[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)** — Zero-shot sim-to-real RL for humanoid robots
 - **[agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train)** — Training framework for AgiBot X1
 
@@ -183,11 +183,6 @@
 - **[OceanSim](https://github.com/umfieldrobotics/OceanSim)** — Underwater simulation on Isaac Sim + Omniverse (verified Isaac Sim)
 - **[MarineGym](https://arxiv.org/abs/2410.14117)** — Accelerated training for underwater vehicles *(paper claims Isaac Sim; verify before adding to live repo)*
 
-### Space Robotics
-
-#### 🌐 Community
-
-- **[Space Robotics Bench](https://github.com/AndrejOrsula/space_robotics_bench)** — Space-domain benchmark (verified Isaac Sim per official docs)
 
 ### Surgical Robotics
 
