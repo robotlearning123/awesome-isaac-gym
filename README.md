@@ -284,8 +284,8 @@
 
 ### Conference Tutorials
 
-- **[ICRA · CoRL · IROS · RSS](https://www.icra2026.org/)** — Track Isaac-related workshops yearly
-- **[NVIDIA GTC](https://www.nvidia.com/gtc/)** — Annual robotics keynotes and deep-dive sessions
+- **ICRA / CoRL / IROS / RSS** — Track Isaac-related workshops at major robotics conferences yearly
+- **[NVIDIA GTC](https://www.nvidia.com/gtc/)** `[OFFICIAL]` — Annual robotics keynotes and deep-dive sessions
 
 ---
 
