@@ -1,394 +1,390 @@
-# Awesome NVIDIA Isaac Gym 🤖
+# Awesome NVIDIA Isaac 🤖
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Updated](https://img.shields.io/badge/Updated-weekly-blue)](https://github.com/robotlearning123/awesome-nvidia-isaac/pulls)
 
-A curated collection of resources related to **NVIDIA Isaac Gym**, a high-performance GPU-based physics simulation environment for robot learning.
+> **The canonical resource for the NVIDIA Isaac Platform** —
+> GPU-accelerated robotics simulation, learning, and deployment.
+>
+> Covers **Isaac Lab · Isaac Sim · Newton · GR00T · Cosmos · Isaac ROS · Omniverse** and the full physical AI stack.
 
-## 🎯 Quick Links
-
-- [Official Website](https://developer.nvidia.com/isaac-gym)
-
-- [Documentation](https://docs.nvidia.com/isaac/isaac/doc/index.html)
-
-- [Community Forum](https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322)
-
-- [Latest Release Info](#-latest-releases)
+📦 **Looking for legacy Isaac Gym (Preview)?** → see [`isaac-gym.md`](isaac-gym.md)
 
 ---
 
-## 📋 Contents
+## ⚡ Quick Links — by Intent
 
-- [Latest Releases](#-latest-releases)
-
-- [Getting Started](#-getting-started)
-
-- [Official Resources](#-official-resources)
-
-- [Learning Materials](#-learning-materials)
-
-  - [Tutorials](#tutorials)
-
-  - [Workshops](#workshops)
-
-  - [Video Guides](#video-guides)
-
-- [Research Papers](#-research-papers)
-
-  - [Core Papers](#core-papers)
-
-  - [Robot Manipulation](#robot-manipulation)
-
-  - [Locomotion & Control](#locomotion--control)
-
-  - [Simulation & Learning](#simulation--learning)
-
-- [Tools & Libraries](#-tools--libraries)
-
-  - [RL Frameworks](#rl-frameworks)
-
-  - [Community Projects](#community-projects)
-
-- [Applications & Examples](#-applications--examples)
-
-- [Community Resources](#-community-resources)
+| I want to… | Go to |
+|---|---|
+| 🚀 Start with Isaac Lab in 5 minutes | [§0 Getting Started](#-getting-started) |
+| 🦾 Train a humanoid policy (GR00T / HOVER) | [§2 Humanoid](#humanoid) |
+| 🐕 Train quadruped locomotion | [§2 Quadruped](#quadruped--legged) |
+| 🤖 Build manipulation skills | [§2 Manipulation](#manipulation) |
+| 🔄 Migrate from Isaac Gym to Isaac Lab | [§0 Migration](#-getting-started) |
+| ⚡ Switch physics backend (Newton / PhysX / MuJoCo) | [§1 Core Platforms](#%EF%B8%8F-core-platforms) |
+| 🌍 Generate synthetic data with Cosmos | [§3 Foundation Models](#foundation-models--world-models) |
+| 📰 Latest research papers (auto-updated) | [§4 Research](#-research) |
+| 🏭 Deploy to real robots | [§5 Production & Sim2Real](#%EF%B8%8F-production--sim2real) |
+| ⭐ See who uses Isaac | [§6 Showcase](#-showcase) |
 
 ---
 
-## 🚀 Latest Releases
+## 📚 Contents
 
-- **March 2024**: HumanoidVerse - A Multi-simulator Framework for Humanoid Robot Learning ([GitHub](https://github.com/LeCAR-Lab/HumanoidVerse))
-- **February 2024**: Isaac Lab - A unified and modular framework for robot learning ([Website](https://isaac-sim.github.io/IsaacLab/main/index.html))
-- **February 2024**: PhysX 5 SDK release ([GitHub](https://github.com/NVIDIA-Omniverse/PhysX))
-- **February 2022**: Isaac Gym Preview 4 (1.3.0)
-- **October 2021**: Isaac Gym Preview 3
-- **June 2021**: [NVIDIA Isaac Sim on Omniverse Open Beta](https://developer.nvidia.com/blog/nvidia-isaac-sim-on-omniverse-now-available-in-open-beta/)
-
-- **March 23, 2022:** GTC 2022 Session — [Isaac Gym: The Next Generation — High-performance Reinforcement Learning in Omniverse](https://www.nvidia.com/gtc/session-catalog/?search=Isaac#/session/1638331324610001KvlV).
-
-- **Isaac Gym Overview:** [Isaac Gym Session](https://www.nvidia.com/en-us/on-demand/session/gtcsiliconvalley2019-s9918/).
-- **GTC Spring 2021:** [Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/).
-
----
-
-## 🎓 Getting Started
-
-1. **Installation & Setup**
-
-   - [Official Isaac Gym Download](https://developer.nvidia.com/isaac-gym)
-
-   - [Quick Start Guide](https://docs.nvidia.com/isaac/isaac/doc/setup.html)
-
-   - [Environment Setup](https://docs.nvidia.com/isaac/isaac/doc/setup.html#environment-setup)
-
-2. **Basic Concepts**
-
-   - [Introduction to Isaac Gym](https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/)
-
-   - [transic](https://github.com/transic-robot/transic): Official Implementation of "TRANSIC: Sim-to-Real Policy Transfer by Learning from Online Correction" CoRL 2024.
-
-   - [Robot Synesthesia](https://github.com/YingYuan0414/in-hand-rotation): Official Implementation of "Robot Synesthesia: In-Hand Manipulation with Visuotactile Sensing" ICRA 2024.
-
-   - [RLAfford](https://github.com/hyperplane-lab/RLAfford): Official Implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning" ICRA 2023.
-
-   - [Core Components Overview](https://docs.nvidia.com/isaac/isaac/doc/index.html)
-
-   - [Basic Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
-
-
-
-## 📚 Official Resources
-
-### Core Documentation
-
-- [Isaac SDK Documentation](https://docs.nvidia.com/isaac/isaac/doc/index.html)
-- [OmniIsaacGymEnvs Repository](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)
-- [Official Blog Posts](https://developer.nvidia.com/blog/tag/isaac/)
-
-### Learning Resources
-
-- [Video Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)
-- [Developer Blog](https://developer.nvidia.com/blog/tag/isaac/)
-- [NVIDIA Omniverse Channel](https://www.youtube.com/c/NVIDIAOmniverse)
-
-## 📖 Learning Materials
-
-### Tutorials
-
-Comprehensive tutorial series from RSS 2021 Workshop:
-1. [Introduction & Getting Started](https://youtu.be/nleDq-oJjGk)
-2. [Environments, Training & Tips](https://youtu.be/1RSugmJ4_gs)
-3. Academic Labs Series:
-   - [University of Toronto](https://youtu.be/nXM5_mwUFOI)
-   - [IMLab](https://youtu.be/VrTVUpDM7K8)
-   - [Stanford University](https://youtu.be/RhjRrUK2abs)
-   - [Soft-Body Simulation](https://youtu.be/i4fGVc6lImo)
-   - [ETH Zurich](https://youtu.be/Afi17BnSuBM)
-4. [New Frontiers in GPU Accelerated RL](https://youtu.be/WhaybakLTXE)
-5. [lycheeai-hub](https://lycheeai-hub.com/)
-
-### Video Guides
-- [Robot Import Guide](https://youtu.be/pxPFr58gHmQ)
-- [Simulator Basics](https://www.youtube.com/watch?v=b12M_kCW82o)
-- [Advanced Features](https://youtu.be/XcvMCs9NJfM)
-- [Community Demonstrations](https://youtu.be/vpHR0qiH-GY)
-
-- **[From Point Clouds to Material Graphs: Explore the Latest in Omniverse Create 2021.3](https://youtu.be/t9nVWhnOgbE)**
-- **[Robot Autonomy with the Digital Twin in Isaac Sim](https://youtu.be/vOEdzxR-_Iw)**
-- **[Can We Simulate a Real Robot?](https://youtu.be/phTnbmXM06g)** — A journey through finding a high-quality physics simulator for a robot quadruped.
-- **[Teaching Robots to Walk with Reinforcement Learning](https://youtu.be/6qbW7Ki9NUc)** — Robot simulation adventure, covering reinforcement learning with the Bittle robot.
-- **[Robot Dog Learns to Walk — Bittle Reinforcement Learning Part 3](https://youtu.be/A0tPe7-R8z0)** — Further progress in training robot quadrupeds to walk.
-
-
-- **[Isaac Sim GTC 2021 — Sim-to-Real](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/):** Session on sim-to-real transfer using Isaac Sim.
-- **[Isaac Sim Video Tutorials](https://www.youtube.com/playlist?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X):** Official video tutorials.
-- **[Training Your JetBot in NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-jetbot-in-isaac-sim/):** Guide on training JetBot using Isaac Sim.
-- **[Training Your NVIDIA JetBot to Avoid Collisions Using NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-nvidia-jetbot-to-avoid-collisions-using-nvidia-isaac-sim/):** Blog post on collision avoidance training.
-- **[Introducing NVIDIA Isaac Gym: End-to-End Reinforcement Learning for Robotics](https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/):** Introduction to Isaac Gym.
-- **[Accelerating Robotics Simulation with NVIDIA Omniverse Isaac Sim](https://developer.nvidia.com/blog/accelerating-robotics-simulation-with-nvidia-omniverse-isaac-sim/):** Blog post on using Omniverse with Isaac Sim.
-- **[Developing Robotics Applications in Python with NVIDIA Isaac SDK](https://developer.nvidia.com/blog/developing-robotics-applications-in-python-with-isaac-sdk/):** Guide on using Isaac SDK with Python.
-- **[Building an Intelligent Robot Dog with the NVIDIA Isaac SDK](https://developer.nvidia.com/blog/building-intelligent-robot-dog-with-isaac-sdk/):** Tutorial on building a robot dog.
-- **[NVIDIA Omniverse YouTube Channel](https://www.youtube.com/c/NVIDIAOmniverse/videos?&ab_channel=NVIDIAOmniverse):** Official channel with various tutorials and demos.
-
-
-- [ICRA2021] Sim-to-Real for Robotic Tactile Sensing via Physics-Based Simulation and Learned Latent Projections: [paper](https://arxiv.org/pdf/2103.16747.pdf)
-
-- [2021] DeformerNet: A Deep Learning Approach to 3D Deformable Object Manipulation: [paper](https://arxiv.org/pdf/2107.08067.pdf)
-
-- [RSS2021_VLRR] A Simple Method for Complex In-Hand Manipulation: [paper](https://rssvlrr.github.io/papers/13_CameraReady_RSS2021_VLRR.pdf), [project](https://sites.google.com/view/in-hand-reorientation)
-
-### Locomotion
-- [RSS2024] Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion: [paper](https://arxiv.org/abs/2401.17583), [code](https://github.com/LeCAR-Lab/ABS)
-
-- [RSS2022] Rapid Locomotion via Reinforcement Learning: [paper](https://arxiv.org/pdf/2205.02824), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/Improbable-AI/rapid-locomotion-rl/tree/main)
-
-- [CoRL2021] Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning: [paper](https://arxiv.org/pdf/2109.11978.pdf), [openreview](https://openreview.net/forum?id=wK2fDDJ5VcF), [**code**](https://github.com/leggedrobotics/legged_gym), [project](https://leggedrobotics.github.io/legged_gym/)
-
-- [ICRA2021] Dynamics Randomization Revisited:A Case Study for Quadrupedal Locomotion: [project](https://www.pair.toronto.edu/understanding-dr/), [paper](https://arxiv.org/abs/2011.02404), [video](https://youtu.be/ckdHWWpfSpk)
-
-- [2021] GLiDE: Generalizable Quadrupedal Locomotion in Diverse Environments with a Centroidal Model: [project](https://www.pair.toronto.edu/glide-quadruped/), [paper](https://arxiv.org/abs/2104.09771)
-
-- [CoRL2020] Learning a Contact-Adaptive Controller for Robust, Efficient Legged Locomotion: [paper](https://arxiv.org/abs/2009.10019), [video](https://youtu.be/JJOmFZKpYTo), [project](https://sites.google.com/view/learn-contact-controller/home), [blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
-
-- [RAL2021] Learning a State Representation and Navigation in Cluttered and Dynamic Environments: [paper](https://arxiv.org/pdf/2103.04351.pdf)
-
-- **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse):** A Multi-simulator Framework for Humanoid Robot Learning (2024)
-  - Features multi-simulator support (Isaac Gym, Flex, MuJoCo)
-  - Includes diverse humanoid models and environments
-  - Provides comprehensive benchmarking tools
-  - Enables efficient parallel training across simulators
-
-- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
-  - [Paper](https://arxiv.org/abs/2403.14864)
-  - Features hierarchical imitation learning framework
-  - Enables robust humanoid locomotion in challenging environments
-  - Demonstrates successful real-world deployment
-
-- **[ASAP](https://agile.human2humanoid.com/):** Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills (2025)
-  - [Paper](https://arxiv.org/abs/2502.01143)
-  - Features two-stage framework for sim-to-real transfer
-  - Enables highly agile humanoid motions like kicks and jumps
-  - Successfully deployed on real Unitree G1 humanoid robot
-  - Demonstrates significant improvement over SysID and DR baselines
-
-### Blogs
-
-- **[A Brief Introduction to NVIDIA Omniverse](https://zhuanlan.zhihu.com/p/462305733)**
+- [§0 Getting Started](#-getting-started)
+- [§1 Core Platforms](#%EF%B8%8F-core-platforms)
+- [§2 Robots by Application](#-robots-by-application)
+- [§3 Algorithms & Models](#-algorithms--models)
+- [§4 Research](#-research)
+- [§5 Production & Sim2Real](#%EF%B8%8F-production--sim2real)
+- [§6 Showcase](#-showcase)
+- [§7 Community](#-community)
+- [Contributing](#contributing)
+- [Latest Research (auto-updated)](#-latest-research-auto-updated)
 
 ---
 
-## 📑 Research Papers
+## 📚 Getting Started
 
-### Core Papers
-- [Isaac Gym: High Performance GPU-Based Physics Simulation](https://arxiv.org/abs/2108.10470) (NeurIPS 2021)
-  - [Project Page](https://sites.google.com/view/isaacgym-nvidia)
-  - [OpenReview Discussion](https://openreview.net/forum?id=fgFBtYgJQX_)
+### 🏛️ Official
 
-### Robot Manipulation
+- **[Isaac Lab Documentation](https://isaac-sim.github.io/IsaacLab/)** — Full framework docs, tutorials, API reference
+- **[Isaac Lab GitHub](https://github.com/isaac-sim/IsaacLab)** — Source, releases, examples
+- **[Isaac Sim Documentation](https://docs.isaacsim.omniverse.nvidia.com/)** — Simulator setup, scenes, sensors
+- **[Isaac Sim GitHub](https://github.com/isaac-sim/IsaacSim)** — Open-source simulator
+- **[NVIDIA Isaac Platform Hub](https://developer.nvidia.com/isaac)** — Top-level entry point
+- **[Install Isaac Sim + Isaac Lab on DGX Spark](https://build.nvidia.com/spark/isaac)** — Reference install
+- **[Isaac Lab on NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)** — Container images
+- **[NVIDIA Developer Blog · Isaac tag](https://developer.nvidia.com/blog/tag/isaac/)** — Latest official tutorials
 
-- **[RLAfford](https://github.com/hyperplane-lab/RLAfford):** Official implementation of "RLAfford: End-to-end Affordance Learning with Reinforcement Learning", ICRA 2023.
-- **[Masked Visual Pre-training for Robotics (MVP)](https://github.com/ir413/mvp):** Repository for the MVP project.
-- **[Factory: Fast Contact for Robotic Assembly](https://sites.google.com/nvidia.com/factory):** RSS 2022.
-  - [Paper](http://doi.acm.org/10.1145/3450626.3459670)
-  - [Code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
-- **[ASE: Adversarial Skill Embeddings](https://nv-tlabs.github.io/ASE/):** SIGGRAPH 2022.
-  - [Paper](https://arxiv.org/abs/2205.01906)
-  - [Code](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
-- **[Data-Driven Operational Space Control (OSCAR)](https://cremebrule.github.io/oscar-web/):** Adaptive and robust robot manipulation.
-  - [Paper](https://arxiv.org/abs/2110.00704)
-  - [Code](https://github.com/nvlabs/oscar)
-- **[DefGraspSim](https://sites.google.com/nvidia.com/defgraspsim):** Simulation-based grasping of deformable objects.
-  - [Paper](https://arxiv.org/pdf/2107.05778.pdf)
-  - [Video](https://youtu.be/Caj0AtsKKVI)
-  - [Code](https://github.com/NVlabs/deformable_object_grasping)
-- **[In-Hand Object Pose Tracking](https://sites.google.com/view/in-hand-object-pose-tracking/):** ICRA 2021.
-  - [Paper](https://arxiv.org/pdf/2002.12160.pdf)
-- **[STORM: Fast Joint-Space MPC for Reactive Manipulation](https://sites.google.com/view/manipulation-mpc):** CoRL 2021.
-  - [Paper](https://arxiv.org/pdf/2104.13542.pdf)
-  - [Code](https://github.com/NVlabs/storm)
-- **[Transferring Dexterous Manipulation from GPU Simulation to Real-World TriFinger](https://s2r2-ig.github.io/):**
-  - [Paper](https://arxiv.org/pdf/2108.09779.pdf)
-  - [Code](https://github.com/pairlab/leibnizgym)
-- **[Causal Reasoning in Simulation for Robot Manipulation Policies](https://sites.google.com/view/crest-causal-struct-xfer-manip):** ICRA 2021.
-  - [Paper](https://arxiv.org/pdf/2103.16772.pdf)
-- **[Reactive Long Horizon Task Execution](https://www.youtube.com/playlist?list=PL-oD0xHUngeLfQmpngYkGFZarstfPOXqX):** IROS 2021.
-  - [Paper](https://arxiv.org/pdf/2011.08694.pdf)
-- **[RoboDuet](https://locomanip-duet.github.io/):** Learning a Cooperative Policy for Whole-body Legged Loco-Manipulation (2024)
-  - [Paper](https://arxiv.org/abs/2403.17367)
-  - [Code](https://github.com/Robo-Duet/RoboDuet)
-  - Features two-policy framework for locomotion and manipulation
-  - Achieves 23% improvement in success rate for mobile manipulation tasks
-  - Zero-shot transfer from Go1+ARX5 to Go2+ARX5
+### 🌐 Community Starters
 
-- **[Kitchen Worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds):** Long-horizon Task-and-Motion-Planning (TAMP) in Kitchen Scenes (2024)
-  - [Paper](https://arxiv.org/abs/2410.02193)
-  - [Code](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds)
-  - Library of TAMP problems in kitchen and household scenes
-  - Integrates VLM (e.g. GPT-4v) guidance for planning
-  - Includes procedural scene and trajectory generation
+- **5-Minute Hello World** — *(coming soon in this repo)*
+- **Migration: Isaac Gym → Isaac Lab** — *(coming soon in this repo)*
 
-### Localization & Control
+---
 
-- **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse):** A Multi-simulator Framework for Humanoid Robot Learning (2024)
-  - Features multi-simulator support (Isaac Gym, Flex, MuJoCo)
-  - Includes diverse humanoid models and environments
-  - Provides comprehensive benchmarking tools
-  - Enables efficient parallel training across simulators
+## 🏛️ Core Platforms
 
-- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/):** Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
-  - [Paper](https://arxiv.org/abs/2403.14864)
-  - Features hierarchical imitation learning framework
-  - Enables robust humanoid locomotion in challenging environments
-  - Demonstrates successful real-world deployment
+### Frameworks (Robot Learning)
 
-- **[ASAP](https://agile.human2humanoid.com/):** Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills (2025)
-  - [Paper](https://arxiv.org/abs/2502.01143)
-  - Features two-stage framework for sim-to-real transfer
-  - Enables highly agile humanoid motions like kicks and jumps
-  - Successfully deployed on real Unitree G1 humanoid robot
-  - Demonstrates significant improvement over SysID and DR baselines
+#### 🏛️ Official
 
-- **[Learning to Walk in Minutes Using Massively Parallel Deep RL](https://leggedrobotics.github.io/legged_gym/):** CoRL 2021.
-  - [Paper](https://arxiv.org/pdf/2109.11978.pdf)
-  - [Code](https://github.com/leggedrobotics/legged_gym)
+- **[Isaac Lab](https://github.com/isaac-sim/IsaacLab)** `[OFFICIAL]` — Modular GPU-accelerated robot learning framework. **Latest stable: 2.3.2** (2026-02). **Latest beta: 3.0.0** (2026-03 GTC, built on Sim 6.0, multi-backend physics). 150K+ FPS for parallel training. Foundation of GR00T training pipeline.
+- **[Isaac Lab Release Notes](https://isaac-sim.github.io/IsaacLab/main/source/refs/release_notes.html)** `[OFFICIAL]` — Authoritative version history
+- **[Isaac Lab-Arena](https://developer.nvidia.com/isaac/lab-arena)** `[OFFICIAL]` — Large-scale policy evaluation framework (CES 2026), co-developed with Lightwheel. Connects to LIBERO, RoboCasa benchmarks.
+- **[Isaac Teleop](https://developer.nvidia.com/isaac)** `[OFFICIAL]` — Unified teleoperation + data collection across sim and real (GA at GTC 2026). XR headsets, body trackers, MANUS gloves.
 
-- **[Dynamics Randomization Revisited](https://www.pair.toronto.edu/understanding-dr/):** A case study for quadrupedal locomotion.
-  - [Paper](https://arxiv.org/abs/2011.02404)
-  - [Video](https://youtu.be/ckdHWWpfSpk)
+### Simulators
 
-- **[GLiDE: Generalizable Quadrupedal Locomotion](https://www.pair.toronto.edu/glide-quadruped/):**
-  - [Paper](https://arxiv.org/abs/2104.09771)
+#### 🏛️ Official
 
-- **[Learning a Contact-Adaptive Controller](https://sites.google.com/view/learn-contact-controller/home):** For robust, efficient legged locomotion.
-  - [Paper](https://arxiv.org/abs/2009.10019)
-  - [Video](https://youtu.be/JJOmFZKpYTo)
-  - [Blog](https://developer.nvidia.com/blog/contact-adaptive-controller-locomotion/)
+- **[Isaac Sim](https://github.com/isaac-sim/IsaacSim)** `[OFFICIAL]` — Open-source robotics simulator on Omniverse. **Latest stable: 5.1.0**. **6.0 Early Developer Release** (GTC 2026) — multi-physics-backend, NuRec integration, Robot Inspector tools.
+- **[Isaac Sim Documentation](https://docs.isaacsim.omniverse.nvidia.com/)** `[OFFICIAL]`
+- **[Omniverse NuRec](https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/)** `[OFFICIAL]` — 3D Gaussian splatting libraries for converting sensor data into interactive simulations (GA at GTC 2026)
+- **[Isaac Gym (Legacy)](https://developer.nvidia.com/isaac-gym)** `[OFFICIAL]` `[DEPRECATED]` — Preview 4 final · See [`isaac-gym.md`](isaac-gym.md) for legacy resources
 
-- **[Learning a State Representation and Navigation](https://arxiv.org/pdf/2103.04351.pdf):** In cluttered and dynamic environments.
+### Physics Engines
 
-### Others
+#### 🏛️ Official
 
-- **[BayesSimIG](https://arxiv.org/pdf/2107.04527.pdf):** Scalable parameter inference for adaptive domain randomization with Isaac Gym.
-  - [Code](https://github.com/NVlabs/bayes-sim-ig)
-- **[Isaac Gym: High Performance GPU-Based Physics Simulation](https://sites.google.com/view/isaacgym-nvidia):** NeurIPS 2021.
-  - [Paper](https://arxiv.org/abs/2108.10470)
-  - [OpenReview](https://openreview.net/forum?id=fgFBtYgJQX_)
-- **[Learning to Swim](https://arxiv.org/abs/2410.00120v1):** Reinforcement learning for 6-DOF control of thruster-driven AUVs.
-- **[MarineGym: Accelerated Training for Underwater Vehicles with High-Fidelity RL Simulation](https://arxiv.org/abs/2410.14117):** Based on Issac Sim
-- **[space_robotics_bench](https://github.com/AndrejOrsula/space_robotics_bench)** Space Robotics Bench
-- **[Humanoid-Gym](https://github.com/roboterax/humanoid-gym):** Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer
+- **[Newton](https://github.com/newton-physics/newton)** `[OFFICIAL]` `[NEW]` — GPU-accelerated physics engine built on NVIDIA Warp + OpenUSD. **1.0 GA at GTC 2026** (2026-03-17). Linux Foundation project co-developed with **Google DeepMind + Disney Research**. Includes MuJoCo Warp, Kamino solvers. Up to **475× faster** vs MJX for manipulation.
+- **[Newton — Announcement Blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)** `[OFFICIAL]`
+- **[NVIDIA PhysX](https://github.com/NVIDIA-Omniverse/PhysX)** `[OFFICIAL]` — Default rigid-body physics in Isaac Sim/Lab
+- **[NVIDIA Warp](https://github.com/NVIDIA/warp)** `[OFFICIAL]` — Python GPU computing framework underpinning Newton + Isaac Lab data pipelines
+- **[MuJoCo Warp](https://github.com/google-deepmind/mujoco_warp)** `[OFFICIAL]` — MuJoCo on Warp (NVIDIA + Google DeepMind), 70× speedup
 
+### Foundation / Asset Layer
 
-## 🛠 Tools & Libraries
+#### 🏛️ Official
+
+- **[NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/)** `[OFFICIAL]` — Collaboration + simulation platform underlying Isaac Sim
+- **[OpenUSD](https://openusd.org/)** `[OFFICIAL]` — Universal Scene Description (Pixar/NVIDIA)
+
+### ROS / Edge
+
+#### 🏛️ Official
+
+- **[Isaac ROS](https://github.com/NVIDIA-ISAAC-ROS)** `[OFFICIAL]` — CUDA-accelerated ROS 2 packages (NITROS). **Latest: 4.4** (2026-02-19) with DGX Spark + JetPack 7.1 support.
+- **[Isaac ROS Documentation](https://nvidia-isaac-ros.github.io/)** `[OFFICIAL]`
+- **[NVIDIA Jetson Thor](https://developer.nvidia.com/embedded/jetson-thor)** `[OFFICIAL]` — Edge robot computing platform (Blackwell GPU)
+
+---
+
+## 🤖 Robots by Application
+
+### Humanoid
+
+#### 🏛️ Official
+
+- **[Isaac GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T)** `[OFFICIAL]` `[GR00T]` — Humanoid robot foundation model with Cosmos-Reason2-2B + Qwen3-VL VLM backbone. Apache 2.0 licensed. Pretrained on 20K hours EgoScale human video data. Early Access at GTC 2026.
+- **[Isaac GR00T (Developer Hub)](https://developer.nvidia.com/isaac/gr00t)** `[OFFICIAL]` `[GR00T]`
+- **[GR00T N1 Paper (arXiv 2503.14734)](https://arxiv.org/abs/2503.14734)** `[OFFICIAL]` — Dual-system architecture for generalist humanoid robots
+- **[GR00T N1.5 Research Page](https://research.nvidia.com/labs/gear/gr00t-n1_5/)** `[OFFICIAL]` `[GR00T]` — Enhanced VLM, FLARE loss, DreamGen integration
+- **[GR00T N2 (Preview)](https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world)** `[OFFICIAL]` `[GR00T]` — Next-gen, year-end 2026 target. #1 on MolmoSpaces / RoboArena.
+- **[HOVER](https://github.com/NVlabs/HOVER)** `[OFFICIAL]` — Neural whole-body controller for humanoids, built on Isaac Lab. Sim-to-real for Unitree H1.
+- **[Isaac Lab Mimic](https://developer.nvidia.com/isaac/lab)** `[OFFICIAL]` — Imitation learning extension for Isaac Lab
+
+#### 🌐 Community
+
+- **[HumanoidVerse](https://github.com/LeCAR-Lab/HumanoidVerse)** — Multi-simulator framework for humanoid robot learning
+- **[ASAP](https://agile.human2humanoid.com/)** — Aligning Simulation and Real-World Physics for Agile Humanoid Whole-Body Skills (LeCAR Lab, 2025)
+- **[HIMLoco](https://junfeng-long.github.io/HIMLoco/)** — Hierarchical Imitation Learning for Robust Humanoid Locomotion (2024)
+- **[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)** — Zero-shot sim-to-real RL for humanoid robots
+- **[agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train)** — Training framework for AgiBot X1
+
+### Quadruped / Legged
+
+#### 🏛️ Official
+
+- **[Legged Robotics (NVIDIA Reference Envs)](https://github.com/isaac-sim/IsaacLab/tree/main/source/isaaclab_tasks)** `[OFFICIAL]` — Quadruped tasks in Isaac Lab
+
+#### 🌐 Community
+
+- **[Legged Gym (RSL)](https://github.com/leggedrobotics/legged_gym)** — Massively parallel deep RL for legged locomotion (ETH RSL, CoRL 2021)
+- **[Agile But Safe (ABS)](https://github.com/LeCAR-Lab/ABS)** — Collision-Free High-Speed Legged Locomotion (RSS 2024)
+- **[Rapid Locomotion via RL](https://github.com/Improbable-AI/rapid-locomotion-rl)** — RSS 2022
+- **[rl-mpc-locomotion](https://github.com/silvery107/rl-mpc-locomotion)** — RL + MPC for legged robots
+- **[GLiDE](https://www.pair.toronto.edu/glide-quadruped/)** — Generalizable Quadrupedal Locomotion (2021)
+
+### Manipulation
+
+#### 🏛️ Official
+
+- **[Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)** `[OFFICIAL]` — Reference workflows for robotic arms
+- **[Isaac GR00T-Mimic Blueprint](https://developer.nvidia.com/isaac/gr00t)** `[OFFICIAL]` — Synthetic manipulation motion generation
+- **[Cosmos Policy](https://www.therobotreport.com/nvidia-adds-cosmos-policy-world-foundation-models/)** `[OFFICIAL]` `[NEW]` — Post-trained Cosmos Predict-2 for manipulation. SOTA on LIBERO + RoboCasa.
+
+#### 🌐 Community
+
+- **[RLAfford](https://github.com/hyperplane-lab/RLAfford)** — End-to-end Affordance Learning with RL (ICRA 2023)
+- **[Factory](https://sites.google.com/nvidia.com/factory)** — Fast Contact for Robotic Assembly (RSS 2022)
+- **[ASE](https://nv-tlabs.github.io/ASE/)** — Adversarial Skill Embeddings (SIGGRAPH 2022)
+- **[OSCAR](https://cremebrule.github.io/oscar-web/)** — Operational Space Control
+- **[DefGraspSim](https://sites.google.com/nvidia.com/defgraspsim)** — Deformable object grasping
+- **[STORM](https://sites.google.com/view/manipulation-mpc)** — Fast Joint-Space MPC (CoRL 2021)
+- **[robosuite](https://github.com/ARISE-Initiative/robosuite)** — Modular simulation framework for robot learning
+- **[RoboDuet](https://locomanip-duet.github.io/)** — Whole-body Legged Loco-Manipulation (2024)
+- **[Kitchen Worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds)** — Long-horizon TAMP (2024)
+
+### Mobile / Wheeled
+
+#### 🏛️ Official
+
+- **[Nova Carter](https://developer.nvidia.com/isaac/perceptor)** `[OFFICIAL]` — Reference autonomous mobile robot
+
+### Aerial / Drones
+
+#### 🌐 Community
+
+- **[Isaac Lab Drone Envs](https://github.com/isaac-sim/IsaacLab/tree/main/source/isaaclab_tasks)** — Multirotor / thruster support added in Lab 2.3.2
+
+### Underwater / Marine
+
+#### 🌐 Community
+
+- **[OceanSim](https://github.com/umfieldrobotics/OceanSim)** — Underwater simulation on Isaac Sim + Omniverse
+- **[MarineGym](https://arxiv.org/abs/2410.14117)** — Accelerated training for underwater vehicles
+- **[Learning to Swim](https://arxiv.org/abs/2410.00120v1)** — RL for 6-DOF thruster-driven AUVs
+- **[isaac_underwater](https://github.com/Field-Robotics-Japan/isaac_underwater)** — Underwater sim integrations
+
+### Space Robotics
+
+#### 🌐 Community
+
+- **[Space Robotics Bench](https://github.com/AndrejOrsula/space_robotics_bench)** — Space-domain benchmark on Isaac Sim
+
+### Surgical Robotics
+
+#### 🏛️ Official
+
+- **[Isaac for Surgical Robotics](https://www.2minutemedicine.com/nvidia-gtc-2026-unveils-isaac-gr00t-foundation-model-for-surgical-robotics/)** `[OFFICIAL]` `[NEW]` — GR00T extended for surgical robotics (GTC 2026)
+
+### Agriculture / Industrial Verticals
+
+#### 🌐 Community
+
+- **[Aigen](https://aigen.io/)** — Agricultural robots using Cosmos + Isaac Sim, Jetson Orin edge inference
+
+---
+
+## 🧠 Algorithms & Models
 
 ### RL Frameworks
 
-- [RL Games](https://github.com/Denys88/rl_games) - Compatible RL algorithms
-- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)
-- [skrl](https://github.com/Toni-SM/skrl) - Modular RL library
-- [Minimal Stable PPO](https://github.com/ToruOwO/minimal-stable-PPO)
+#### 🏛️ Official
 
+- **[RSL-RL](https://github.com/leggedrobotics/rsl_rl)** `[OFFICIAL-ADJACENT]` — Robotics Systems Lab RL (ETH Zürich) — official Isaac Lab integration
+- **[skrl](https://github.com/Toni-SM/skrl)** `[OFFICIAL-ADJACENT]` — Modular and reusable library for RL, native Isaac Lab support
 
-- [skrl](https://github.com/Toni-SM/skrl), [paper](https://arxiv.org/abs/2202.03825)
-  
-- [RSL RL](https://github.com/leggedrobotics/rsl_rl)
+#### 🌐 Community
 
-## Related GitHub Repos
+- **[RL Games](https://github.com/Denys88/rl_games)** — High-performance RL on Isaac Gym/Lab
+- **[Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)** — PyTorch RL implementations
+- **[Tianshou](https://github.com/thu-ml/tianshou)** — Modular RL platform
 
-- [IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
+### Imitation Learning
 
-- [isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering)
+#### 🏛️ Official
 
-- [isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils): Developed by the CMU Intelligent Autonomous Manipulation Lab
+- **[Isaac Lab Mimic](https://developer.nvidia.com/isaac/lab)** `[OFFICIAL]` — Imitation learning workflows
+- **[Isaac Teleop](https://developer.nvidia.com/isaac)** `[OFFICIAL]` — Demonstration data capture
 
-- [isaacgym_sandbox](https://github.com/kploeger/isaacgym_sandbox)
+#### 🌐 Community
 
-- [thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO): Steering-based control of a two-wheeled vehicle using RL-PPO and NVIDIA Isaac Gym
+- **[robosuite](https://github.com/ARISE-Initiative/robosuite)** — Demonstrations + imitation learning
 
-- [dvrk_IssacGym](https://github.com/baotruyenthach/dvrk_IssacGym), [link](https://github.com/baotruyenthach/dvrk_grasp_pipeline_isaacgym)
+### Foundation Models / World Models
 
+#### 🏛️ Official
 
-### Community Projects
+- **[NVIDIA Cosmos 3.0](https://www.nvidia.com/en-us/ai/cosmos/)** `[OFFICIAL]` `[NEW]` — World Foundation Models platform. **2M+ downloads**. Unifies vision + reasoning + action + simulation.
+- **[Cosmos GitHub](https://github.com/nvidia-cosmos)** `[OFFICIAL]`
+- **[Cosmos Predict 2.5](https://github.com/nvidia-cosmos)** `[OFFICIAL]` — Generates realistic future world states from multimodal inputs
+- **[Cosmos Reason 2](https://github.com/nvidia-cosmos)** `[OFFICIAL]` — Spatiotemporal reasoning, embodied decision-making via long chain-of-thought
+- **[Cosmos Transfer 2.5](https://github.com/nvidia-cosmos)** `[OFFICIAL]` — Photorealistic simulation grounded in physics
+- **[Cosmos Policy](https://github.com/nvidia-cosmos)** `[OFFICIAL]` — Manipulation policy training on Predict-2
+- **[Cosmos: World Simulation Paper (arXiv 2511.00062)](https://arxiv.org/abs/2511.00062)** `[OFFICIAL]`
+- **[GR00T N1.7 / N2](https://github.com/NVIDIA/Isaac-GR00T)** — see [Humanoid](#humanoid) section
 
-- **[IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs):** Official Isaac Gym RL environments.
-- **[isaacgym_hammering](https://github.com/LiCHOTHU/isaacgym_hammering):** Hammering task implementation.
-- **[isaacgym-utils](https://github.com/iamlab-cmu/isaacgym-utils):** Utilities by CMU's Intelligent Autonomous Manipulation Lab.
-- **[isaacgym_sandbox](https://github.com/kploeger/isaacgym_sandbox):** Sandbox for Isaac Gym experiments.
-- **[thormang3-gogoro-PPO](https://github.com/guichristmann/thormang3-gogoro-PPO):** Two-wheeled vehicle control using PPO.
-- **[Bez_IsaacGym](https://github.com/utra-robosoccer/Bez_IsaacGym):** Environments for humanoid robot Bez.
-- **[DexterousHands](https://github.com/PKU-MARL/DexterousHands):** Dual dexterous hand manipulation tasks.
-- **[legged_gym_isaac](https://github.com/chengxuxin/legged_gym_isaac):** Legged robots in Isaac Gym.
-- **[shifu](https://github.com/42jaylonw/shifu):** Environment builder for any robot.
-- **[Rofunc](https://github.com/Skylark0924/Rofunc):** Python package for robot learning from demonstration.
-- **[Dofbot Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-DofbotReacher):** Sim2Real environment for Dofbot.
-- **[UR10 Reacher](https://github.com/j3soon/OmniIsaacGymEnvs-UR10Reacher):** Sim2Real environment for UR10.
-- **[TimeChamber](https://github.com/inspirai/TimeChamber):** Massively parallel self-play framework.
-- **[RL-MPC-Locomotion](https://github.com/silvery107/rl-mpc-locomotion):** Deep RL for quadruped locomotion.
-- **[Isaac_Underwater](https://github.com/leonlime/isaac_underwater):** Water and underwater tests using NVIDIA Isaac Sim.
-- **[VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit):** Omniverse IndoorKit Extension.
-- **[agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train):** The reinforcement learning training code for AgiBot X1.
-- 
+### Synthetic Data
 
----
+#### 🏛️ Official
 
-## Conference Sessions and Talks
+- **[Physical AI Data Factory Blueprint](https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development)** `[OFFICIAL]` `[NEW]` — Open reference architecture: Cosmos Curator + Transfer + Reason/Evaluator + NVIDIA OSMO
+- **[GR00T-Dreams Blueprint](https://developer.nvidia.com/isaac/gr00t)** `[OFFICIAL]` — Synthetic trajectory generation
+- **[GR00T-Mimic Blueprint](https://developer.nvidia.com/isaac/gr00t)** `[OFFICIAL]` — Manipulation motion generation
 
-- **[Isaac Gym and Omniverse: High Performance Reinforcement Learning Evolved [A31118]](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog?search=A31118)**
-- **[Learning Challenging Tasks for Quadrupedal Robots: From Simulation to Reality [A31308]](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog?search=A31308)**
-- **[Sim-to-Real in Isaac Sim](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31824/)**
-- **[Isaac Gym: End-to-End GPU-Accelerated Reinforcement Learning](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32037/)**
-- **[Bridging Sim2Real Gap: Simulation Tuning for Training Deep Learning Robotic Perception Models](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31649/)**
-- **[Reinforcement Learning and Intralogistics](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-e31467/)**
-- **[Building Robotics Applications Using NVIDIA Isaac SDK](https://www.nvidia.com/en-us/on-demand/session/gtcfall20-a21856/)**
-- **[NVIDIA Isaac Sim — Amazing Robot Models and Tasks](https://www.nvidia.com/en-us/on-demand/session/gtcsj20-d2s43/)**
-- **[Omniverse View 2021.2 — Application Tour](https://www.nvidia.com/en-us/on-demand/session/omniverse2020-om1315/)**
-- **[ISAAC SIM Introduction and Live Demo](https://www.nvidia.com/en-us/on-demand/session/omniverse2020-om1314/)**
-- **[NVIDIA On-Demand ISAAC SIM Sessions](https://www.nvidia.com/en-us/on-demand/search/?facet.mimetype[]=event%20session&layout=list&page=1&q=isaac%20sim&sort=relevance)**
+### Multi-Agent
+
+#### 🌐 Community
+
+- **[Safe Multi-Agent Isaac Gym Benchmark](https://github.com/chauncygu/Safe-Multi-Agent-Isaac-Gym)** — Multi-agent RL benchmark
+- **[TimeChamber](https://github.com/inspirai/TimeChamber)** — Massively parallel multi-agent training
+
+### Sim2Real
+
+#### 🌐 Community
+
+- **[BayesSimIG](https://arxiv.org/pdf/2107.04527.pdf)** — Domain randomization
+- See also: HOVER (Unitree H1 sim-to-real), ASAP
 
 ---
 
-## 🤖 Automated Research Updates
+## 🔬 Research
 
-- Source: arXiv queries for "isaac gym", "omni isaac", and "isaac lab".
-- Schedule: **Daily at 09:00 UTC** or manual via Actions "Research Bot".
-- Output: updates content between the 'research-bot:start' and 'research-bot:end' markers in this README.
-- Safety: opens a Draft PR labeled "needs-approval"; nothing merges automatically.
-- Config: edit `.research-bot.yaml` to adjust queries and limits.
+> 🤖 **Latest research papers are auto-curated and posted weekly** by a research bot
+> (see [`.research-bot.yaml`](.research-bot.yaml)). Scroll to the bottom for the
+> [auto-updated section](#-latest-research-auto-updated).
 
-## 🌟 Contributing
+### Core Papers (Hall of Fame)
 
-Contributions are welcome! Please read our [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
+- **[Isaac Gym: High Performance GPU-Based Physics Simulation for RL](https://arxiv.org/abs/2108.10470)** — NeurIPS 2021 (the founding paper)
+- **[GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2503.14734)** — 2025
+- **[World Simulation with Video Foundation Models for Physical AI (Cosmos)](https://arxiv.org/abs/2511.00062)** — 2025
 
-## 📄 License
+### Benchmarks & Leaderboards
 
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+#### 🏛️ Official / Industry-Standard
 
-## 🙏 Acknowledgments
+- **[Isaac Lab-Arena](https://developer.nvidia.com/isaac/lab-arena)** `[OFFICIAL]` — Standardized policy evaluation
+- **[LIBERO](https://libero-project.github.io/)** — Lifelong robot learning benchmark (integrated with Cosmos Policy + Lab-Arena)
+- **[RoboCasa](https://robocasa.ai/)** — Large-scale simulation framework
+- **[MolmoSpaces](https://allenai.org/)** `[OFFICIAL-ADJACENT]` — VLA evaluation
+- **[RoboArena](https://github.com/RoboArena)** — Generalist robot policy ranking
 
-Special thanks to all contributors and the NVIDIA Isaac team for making these resources available to the robotics community.
+### Conference Tutorials
+
+- **[ICRA · CoRL · IROS · RSS](https://www.icra2026.org/)** — Track Isaac-related workshops yearly
+- **[NVIDIA GTC](https://www.nvidia.com/gtc/)** — Annual robotics keynotes and deep-dive sessions
+
+---
+
+## 🏗️ Production & Sim2Real
+
+### 🏛️ Official
+
+- **[Physical AI Data Factory Blueprint](https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development)** `[OFFICIAL]` — Reference architecture for sim-to-real data pipelines
+- **[Jetson Thor](https://developer.nvidia.com/embedded/jetson-thor)** `[OFFICIAL]` — Edge robot computing (Blackwell)
+- **[Jetson Orin](https://developer.nvidia.com/embedded/jetson-orin)** `[OFFICIAL]` — Lower-tier edge computing
+- **[NVIDIA NGC Catalog](https://catalog.ngc.nvidia.com/)** `[OFFICIAL]` — Pretrained models + containers
+
+### 🌐 Industry Integrations (Case Studies)
+
+- **ABB RobotStudio + Omniverse** — HyperReality release expected 2026
+- **FANUC + Isaac Sim** — Digital twins for factory automation
+- **PTC Onshape + Isaac Sim** — Cloud-native design-to-simulation workflow
+- **CoreWeave** — Isaac Lab for robot learning pipelines
+- **Alibaba Cloud** — Full NVIDIA physical AI stack integration
+
+---
+
+## ⭐ Showcase
+
+### 🏛️ NVIDIA Partner Robot Developers (110+ partners)
+
+**Humanoid pioneers**: Agility Robotics · Boston Dynamics · Figure AI · 1X Technologies · Mentee Robotics · NEURA Robotics · Disney Research (BDX Droids, Olaf)
+
+**Industrial robotics**: ABB · AGIBOT · FANUC · KUKA · Universal Robots · YASKAWA · Hexagon · Techman Robot · Solomon · Franka Robotics · Comau
+
+**Surgical / medical**: CMR Surgical · Medtronic
+
+**Autonomous platforms**: Skild AI · Foretellix · Uber · World Labs
+
+### 🎓 Academic Adopters
+
+ETH Zürich Robotic Systems Lab · Stanford University · Technical University of Munich (TUM) · Peking University · National University of Singapore (NUS) · Toyota Research Institute
+
+### 💼 Notable Community Projects
+
+See sections above (Humanoid, Quadruped, Manipulation) for community-built repos using NVIDIA Isaac.
+
+---
+
+## 🌐 Community
+
+### Official Channels
+
+- **[NVIDIA Developer Forums · Isaac Sim](https://forums.developer.nvidia.com/c/omniverse/simulation/69)** `[OFFICIAL]`
+- **[NVIDIA Developer Forums · Isaac ROS](https://forums.developer.nvidia.com/c/robotics-edge-computing/isaac/isaac-ros/600)** `[OFFICIAL]`
+- **[NVIDIA Developer Forums · Isaac Gym (legacy)](https://forums.developer.nvidia.com/c/robotics-edge-computing/isaac/isaac-gym/322)** `[OFFICIAL]`
+- **[NVIDIA Developer Blog · Isaac tag](https://developer.nvidia.com/blog/tag/isaac/)** `[OFFICIAL]`
+- **[NVIDIA Omniverse YouTube](https://www.youtube.com/c/NVIDIAOmniverse)** `[OFFICIAL]`
+- **[NVIDIA AI YouTube](https://www.youtube.com/c/NVIDIAAI)** `[OFFICIAL]`
+
+### Learning Resources
+
+- **[NVIDIA DLI · Robotics Courses](https://www.nvidia.com/en-us/training/)** `[OFFICIAL]` — Deep Learning Institute curriculum
+- **[NVIDIA GTC On-Demand](https://www.nvidia.com/en-us/on-demand/)** `[OFFICIAL]` — Historical conference sessions
+- **[Tutorials by j3soon](https://tutorial.j3soon.com/robotics/)** — Community-maintained Isaac tutorials
+
+---
+
+## Contributing
+
+Contributions welcome! Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** for the quality criteria:
+
+- **GitHub projects**: ⭐ ≥ 50 OR paper-backed OR NVIDIA official · 12-month commit activity · clear license · readable README
+- **Papers**: published OR major conference accepted · code/model/data at least partially open
+- **Tutorials/blogs**: official or verifiable author · contains code or video · still works within last 6 months
+- **Showcase entries**: public evidence of NVIDIA Isaac use (product, paper, video)
+
+Use the [issue templates](.github/ISSUE_TEMPLATE/) to suggest a resource or report a broken link.
+
+---
+
+## License
+
+[MIT](LICENSE) — Free to use, fork, share. Attribution appreciated.
+
+## Acknowledgments
+
+Thanks to all contributors of the original [`awesome-isaac-gym`](isaac-gym.md) (2021–2026) and to NVIDIA for building the Isaac Platform.
+
+---
 
 ## 🧠 Latest Research (auto-updated)
 
-<!-- research-bot:start -->
-- [HumanoidVerse: A Versatile Humanoid for Vision-Language Guided
-  Multi-Object Rearrangement](https://arxiv.org/abs/2508.16943) — Haozhuo Zhang, Jingkai Sun, Michele Caprio, et al. (2025-08-23) [pdf](https://arxiv.org/pdf/2508.16943.pdf)
-<!-- research-bot:end -->
+<!-- The section below is automatically updated by the research bot. Do not edit by hand. -->
