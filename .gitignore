@@ -1,17 +1,53 @@
-# Python
+# Python bytecode
 __pycache__/
 *.py[cod]
 *.pyc
+*.pyo
 
-# IDE
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# IDE files
 .vscode/
 .idea/
-.DS_Store
+*.swp
+*.swo
+*~
 
-# Runtime
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Bot state files
 .bot/
+
+# Logs
 *.log
 
-# Testing (if needed later)
+# Test artifacts
 .pytest_cache/
 .coverage
+htmlcov/
+.tox/
+.nox/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.bak
+*.temp

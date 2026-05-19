@@ -1,26 +1,90 @@
-# Configuration for the Research Bot.
+# =============================================================================
+# Research Bot Configuration
+# =============================================================================
+# This configuration file controls the automated research paper discovery bot.
+# The bot searches arXiv for papers related to NVIDIA Isaac robotics simulation
+# platforms and updates the README with the latest findings.
+#
 # If PyYAML is not available in your Actions runner, this file will be ignored
 # and defaults in the script will be used. The provided workflow installs PyYAML.
+# =============================================================================
 
-# Search queries for arXiv (joined with OR across queries)
+# -----------------------------------------------------------------------------
+# Search Queries
+# -----------------------------------------------------------------------------
+# These queries are used to search arXiv for relevant papers.
+# Multiple queries are joined with OR logic to cast a wide net.
+# Use quoted phrases ("...") for exact multi-word matches.
+#
+# Coverage areas:
+#   - Isaac Gym: GPU-accelerated physics simulation for RL
+#   - Isaac Lab: Modular framework built on Isaac Sim for robot learning
+#   - Isaac Sim: Full-featured robotics simulator on Omniverse
+#   - Omniverse: NVIDIA's simulation and collaboration platform
+#   - Orbit: Robot learning framework (predecessor/related to Isaac Lab)
+#   - Newton: NVIDIA's physics simulation engine (part of Isaac ecosystem)
+# -----------------------------------------------------------------------------
 queries:
-  - "\"isaac gym\""
-  - omniisaac
-  - "\"isaac lab\""
-  - "\"omni isaac\""
+  # Core Isaac platforms
+  - "\"isaac lab\""           # Isaac Lab - modular robot learning framework
+  - "\"isaac sim\""           # Isaac Sim - Omniverse-based robotics simulator
+  - "\"isaac gym\""           # Isaac Gym - GPU-accelerated RL environment
 
-# Look back this many days for new papers (daily check)
-days_back: 7
+  # Omniverse ecosystem
+  - "\"omniverse robotics\""  # General Omniverse robotics applications
+  - "\"omni isaac\""          # OmniIsaac - Isaac extensions for Omniverse
+  - omniisaac                 # Alternative spelling without space
 
-# Max results fetched per query from arXiv API
-max_results: 25
+  # NVIDIA robotics simulation
+  - "\"nvidia robotics simulation\""  # Broader NVIDIA robotics sim research
 
-# Max items to include in the README section per run
-output_count: 10
+  # Related frameworks
+  - "\"orbit robot learning\""  # Orbit framework for robot learning
 
-# README path to update
+  # Newton physics engine (part of Isaac ecosystem)
+  - "\"newton physics\""        # Newton - NVIDIA's physics simulation engine
+
+# -----------------------------------------------------------------------------
+# Lookback Period
+# -----------------------------------------------------------------------------
+# Number of days to look back when searching for new papers.
+# A longer period ensures we don't miss papers during weekends or holidays.
+# Recommended: 7-14 days for daily runs, 30+ days for weekly runs.
+# -----------------------------------------------------------------------------
+days_back: 14
+
+# -----------------------------------------------------------------------------
+# API Result Limits
+# -----------------------------------------------------------------------------
+# Maximum number of results to fetch from arXiv API per query.
+# Higher values increase coverage but also API load and processing time.
+# The arXiv API has rate limits, so be mindful of very high values.
+# -----------------------------------------------------------------------------
+max_results: 50
+
+# -----------------------------------------------------------------------------
+# Output Settings
+# -----------------------------------------------------------------------------
+# Maximum number of papers to include in the README section per run.
+# Papers are ranked by relevance before truncation.
+# Too many entries can clutter the README; 10-20 is usually ideal.
+# -----------------------------------------------------------------------------
+output_count: 15
+
+# -----------------------------------------------------------------------------
+# README Configuration
+# -----------------------------------------------------------------------------
+# Path to the README file that will be updated with research findings.
+# The path is relative to the repository root.
+# -----------------------------------------------------------------------------
 readme_path: README.md
 
-# Section title to add/update. Content between markers is managed by the bot.
+# -----------------------------------------------------------------------------
+# Section Markers
+# -----------------------------------------------------------------------------
+# The section title defines where research results are inserted in the README.
+# The bot manages content between auto-generated markers.
+# DO NOT manually edit content between the section markers - it will be
+# overwritten on the next bot run.
+# -----------------------------------------------------------------------------
 section_title: "## 🧠 Latest Research (auto-updated)"
-
