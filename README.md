@@ -147,7 +147,6 @@
 - **[Agile But Safe (ABS)](https://github.com/LeCAR-Lab/ABS)** — Collision-Free High-Speed Legged Locomotion (RSS 2024)
 - **[Rapid Locomotion via RL](https://github.com/Improbable-AI/rapid-locomotion-rl)** — RSS 2022
 - **[rl-mpc-locomotion](https://github.com/silvery107/rl-mpc-locomotion)** — RL + MPC for legged robots
-- **[GLiDE](https://www.pair.toronto.edu/glide-quadruped/)** — Generalizable Quadrupedal Locomotion (2021)
 
 ### Manipulation
 
@@ -278,10 +277,10 @@
 #### 🏛️ Official / Industry-Standard
 
 - **[Isaac Lab-Arena](https://developer.nvidia.com/isaac/lab-arena)** `[OFFICIAL]` — Standardized policy evaluation
-- **[LIBERO](https://libero-project.github.io/)** — Lifelong robot learning benchmark (integrated with Cosmos Policy + Lab-Arena)
-- **[RoboCasa](https://robocasa.ai/)** — Large-scale simulation framework
-- **[MolmoSpaces](https://allenai.org/)** `[OFFICIAL-ADJACENT]` — VLA evaluation
-- **[RoboArena](https://github.com/RoboArena)** — Generalist robot policy ranking
+- **[LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO)** — Lifelong robot learning benchmark (NeurIPS 2023). Used by Cosmos Policy + Isaac Lab-Arena.
+- **[RoboCasa](https://robocasa.ai/)** — Large-scale household robotics simulation framework
+- **[RoboCasa GR-1 Tabletop Tasks](https://github.com/robocasa/robocasa-gr1-tabletop-tasks)** — Official GR00T N1 evaluation tasks built on RoboCasa
+- **[RoboArena](https://github.com/robo-arena/roboarena)** — Distributed real-world evaluation of generalist robot policies (CoRL 2025, [arXiv 2506.18123](https://arxiv.org/abs/2506.18123))
 
 ### Conference Tutorials
 
