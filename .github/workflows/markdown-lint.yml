@@ -1,0 +1,81 @@
+name: Markdown Lint
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+
+jobs:
+  markdown-lint:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Create markdownlint config
+        run: |
+          cat > .markdownlint.json << 'EOF'
+          {
+            "default": true,
+            "MD013": {
+              "line_length": 500,
+              "code_blocks": false,
+              "tables": false
+            },
+            "MD033": {
+              "allowed_elements": [
+                "a",
+                "img",
+                "br",
+                "p",
+                "details",
+                "summary",
+                "sup",
+                "sub",
+                "kbd",
+                "div",
+                "span"
+              ]
+            },
+            "MD041": false,
+            "MD024": {
+              "siblings_only": true
+            },
+            "MD034": false,
+            "MD040": false
+          }
+          EOF
+
+      - name: Run markdownlint
+        run: |
+          markdownlint '**/*.md' \
+            --ignore node_modules \
+            --ignore .github/ISSUE_TEMPLATE \
+            --config .markdownlint.json
+
+      - name: Lint summary on failure
+        if: failure()
+        run: |
+          echo "## Markdown Lint Results" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Markdown linting failed. Please fix the issues above." >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Common fixes:" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Ensure consistent heading levels" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Add blank lines around lists and code blocks" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Use consistent list markers" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Ensure proper link formatting" >> "$GITHUB_STEP_SUMMARY"
