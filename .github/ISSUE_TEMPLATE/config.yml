@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: NVIDIA Isaac Sim Forum
+    url: https://forums.developer.nvidia.com/c/omniverse/simulation/69
+    about: For general Isaac Sim questions and discussions
+  - name: NVIDIA Isaac Gym Forum
+    url: https://forums.developer.nvidia.com/c/agx-autonomous-machines/isaac/isaac-gym/322
+    about: For Isaac Gym specific questions and support
+  - name: NVIDIA Isaac Lab Discussions
+    url: https://github.com/isaac-sim/IsaacLab/discussions
+    about: For Isaac Lab questions and community discussions

@@ -1,0 +1,81 @@
+name: Suggest Resource
+description: Suggest a new resource to add to the awesome list
+title: "[Resource]: "
+labels: ["resource-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a resource! Please fill out the information below to help us evaluate and add your suggestion.
+
+  - type: dropdown
+    id: resource-type
+    attributes:
+      label: Resource Type
+      description: What type of resource are you suggesting?
+      options:
+        - Paper
+        - Tool
+        - Tutorial
+        - Video
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the resource
+      placeholder: https://example.com/resource
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Name or title of the resource
+      placeholder: "My Awesome Isaac Gym Tutorial"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of the resource (1-2 sentences)
+      placeholder: "A comprehensive tutorial covering..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this resource belong to?
+      options:
+        - Isaac Lab
+        - Isaac Sim
+        - Isaac Gym
+        - Cross-Platform
+    validations:
+      required: true
+
+  - type: input
+    id: code-repository
+    attributes:
+      label: Code Repository URL
+      description: Link to associated code repository (if applicable)
+      placeholder: https://github.com/user/repo
+    validations:
+      required: false
+
+  - type: textarea
+    id: why-valuable
+    attributes:
+      label: Why is this resource valuable?
+      description: Explain why this resource would be a good addition to the list
+      placeholder: "This resource is valuable because..."
+    validations:
+      required: true

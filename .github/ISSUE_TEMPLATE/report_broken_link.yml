@@ -1,0 +1,45 @@
+name: Report Broken Link
+description: Report a broken or outdated link in the repository
+title: "[Broken Link]: "
+labels: ["broken-link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us maintain the quality of this list! Please provide details about the broken link.
+
+  - type: input
+    id: broken-url
+    attributes:
+      label: Broken URL
+      description: The URL that is no longer working
+      placeholder: https://example.com/broken-link
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location in README
+      description: Where in the README is this link located? (section name or line reference)
+      placeholder: "Section: Papers > Reinforcement Learning"
+    validations:
+      required: true
+
+  - type: input
+    id: suggested-replacement
+    attributes:
+      label: Suggested Replacement
+      description: If you know of an updated or alternative URL, please provide it
+      placeholder: https://example.com/new-link
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional information about the broken link
+      placeholder: "The resource appears to have moved to..."
+    validations:
+      required: false

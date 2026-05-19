@@ -1,0 +1,49 @@
+name: General Improvement
+description: Suggest improvements to the repository
+title: "[Improvement]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to improve this awesome list? We'd love to hear it!
+
+  - type: input
+    id: title
+    attributes:
+      label: Improvement Title
+      description: A brief title for your suggestion
+      placeholder: "Add new section for..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe your improvement suggestion in detail
+      placeholder: "I suggest we..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: improvement-type
+    attributes:
+      label: Improvement Type
+      description: What type of improvement is this?
+      options:
+        - Documentation
+        - Organization
+        - Automation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: How would this improvement benefit users of the list?
+      placeholder: "This would help users by..."
+    validations:
+      required: false
