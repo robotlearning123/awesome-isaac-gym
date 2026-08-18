@@ -346,6 +346,9 @@ Comprehensive tutorial series from RSS 2021 Workshop:
 - **[Isaac_Underwater](https://github.com/leonlime/isaac_underwater):** Water and underwater tests using NVIDIA Isaac Sim.
 - **[VRKitchen2.0-IndoorKit](https://github.com/yizhouzhao/VRKitchen2.0-IndoorKit):** Omniverse IndoorKit Extension.
 - **[agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train):** The reinforcement learning training code for AgiBot X1.
+- **[humanoid-rl-isaaclab](https://github.com/limxdynamics/humanoid-rl-isaaclab):** Isaac Lab RL training for LimX Oli humanoid — sim-to-real locomotion.
+- **[tron1-rl-isaaclab](https://github.com/limxdynamics/tron1-rl-isaaclab):** Isaac Lab reinforcement learning extension for TRON1 bipedal robots — sim-to-real locomotion policies.
+- **[tron2_rl_lab](https://github.com/limxdynamics/tron2_rl_lab):** Isaac Lab RL training pipeline for TRON2 humanoid — sole-foot and wheel-foot variants.
 - 
 
 ---
