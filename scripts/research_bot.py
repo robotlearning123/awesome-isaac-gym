@@ -99,7 +99,7 @@ def parse_arxiv_feed(xml_bytes):
 
 
 def fetch_arxiv(query, max_results):
-    """Fetch papers from arXiv API for the given query."""
+    """Fetch papers from arXiv API for the given query. Raises on network/HTTP errors."""
     params = {
         "search_query": f"all:{query}",
         "sortBy": "submittedDate",
@@ -109,11 +109,8 @@ def fetch_arxiv(query, max_results):
     url = f"{ARXIV_API}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": "research-bot/1.0"})
     
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return parse_arxiv_feed(resp.read())
-    except Exception:
-        return []
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return parse_arxiv_feed(resp.read())
 
 
 def load_seen(path):
@@ -207,12 +204,21 @@ def main():
     
     # Collect papers for all queries
     collected = {}
+    errors = []
     for q in queries:
         try:
             for p in fetch_arxiv(q, max_results):
                 collected[p["id"]] = p
         except Exception as e:
+            errors.append(q)
             print(f"Warning: query '{q}' failed: {e}", file=sys.stderr)
+    
+    if not collected and errors:
+        print(
+            f"Error: no papers fetched; {len(errors)} of {len(queries)} queries failed.",
+            file=sys.stderr,
+        )
+        return 1
     
     if not collected:
         print("No papers fetched; exiting.")
