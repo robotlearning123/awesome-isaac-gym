@@ -389,6 +389,5 @@ Special thanks to all contributors and the NVIDIA Isaac team for making these re
 ## 🧠 Latest Research (auto-updated)
 
 <!-- research-bot:start -->
-- [HumanoidVerse: A Versatile Humanoid for Vision-Language Guided
-  Multi-Object Rearrangement](https://arxiv.org/abs/2508.16943) — Haozhuo Zhang, Jingkai Sun, Michele Caprio, et al. (2025-08-23) [pdf](https://arxiv.org/pdf/2508.16943.pdf)
+- [Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement](https://arxiv.org/abs/2609.38216) — Pavel Bushuyeu, Yujin Chen, Anton Nikolaev, et al. (2026-09-27) [pdf](https://arxiv.org/pdf/2609.38216.pdf)
 <!-- research-bot:end -->
