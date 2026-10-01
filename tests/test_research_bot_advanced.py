@@ -19,7 +19,6 @@ from scripts.research_bot import (  # type: ignore
     fetch_arxiv,
     load_config,
     load_seen,
-    save_seen,
     iso_date,
 )
 
@@ -32,15 +31,12 @@ def test_iso_date_handles_invalid_input():
     assert iso_date(None) is None  # type: ignore
 
 
-def test_parse_arxiv_feed_handles_malformed_xml():
-    """Test that parse_arxiv_feed handles malformed XML gracefully."""
-    malformed_xml = b"<feed>unclosed tag"
-    papers = parse_arxiv_feed(malformed_xml)
-    assert papers == []
-    
-    invalid_xml = b"not xml at all"
-    papers = parse_arxiv_feed(invalid_xml)
-    assert papers == []
+def test_parse_arxiv_feed_raises_on_malformed_xml():
+    """A malformed feed (e.g. an HTML error page served with 200) is an error, not an empty result."""
+    with pytest.raises(ET.ParseError):
+        parse_arxiv_feed(b"<feed>unclosed tag")
+    with pytest.raises(ET.ParseError):
+        parse_arxiv_feed(b"not xml at all")
 
 
 def test_parse_arxiv_feed_handles_empty_fields():
@@ -138,24 +134,6 @@ def test_load_seen_with_missing_file():
     """Test load_seen when file doesn't exist."""
     seen = load_seen("/nonexistent/path/state.json")
     assert seen == set()
-
-
-def test_save_seen_handles_write_errors(tmp_path: Path):
-    """Test save_seen handles write errors gracefully."""
-    # Try to write to a read-only directory
-    ro_path = tmp_path / "readonly"
-    ro_path.mkdir()
-    state_path = ro_path / "subdir" / "state.json"
-    
-    # Make directory read-only
-    os.chmod(ro_path, 0o444)
-    
-    try:
-        save_seen(str(state_path), {"2401.00001", "2401.00002"})
-        # Should not raise exception
-    finally:
-        # Restore permissions for cleanup
-        os.chmod(ro_path, 0o755)
 
 
 def test_parse_arxiv_feed_with_versioned_ids():

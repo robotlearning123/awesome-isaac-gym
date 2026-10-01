@@ -50,11 +50,8 @@ def iso_date(s):
 
 
 def parse_arxiv_feed(xml_bytes):
-    """Parse arXiv Atom feed XML and extract paper information."""
-    try:
-        root = ET.fromstring(xml_bytes)
-    except Exception:
-        return []
+    """Parse arXiv Atom feed XML and extract paper information. Raises on malformed XML."""
+    root = ET.fromstring(xml_bytes)
     
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     papers = []
@@ -99,7 +96,7 @@ def parse_arxiv_feed(xml_bytes):
 
 
 def fetch_arxiv(query, max_results):
-    """Fetch papers from arXiv API for the given query. Raises on network/HTTP errors."""
+    """Fetch papers from arXiv API for the given query. Raises on network/HTTP/parse errors."""
     params = {
         "search_query": f"all:{query}",
         "sortBy": "submittedDate",
