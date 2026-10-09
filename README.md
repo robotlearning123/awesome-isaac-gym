@@ -389,6 +389,6 @@ Special thanks to all contributors and the NVIDIA Isaac team for making these re
 ## 🧠 Latest Research (auto-updated)
 
 <!-- research-bot:start -->
-- [HumanoidVerse: A Versatile Humanoid for Vision-Language Guided
-  Multi-Object Rearrangement](https://arxiv.org/abs/2508.16943) — Haozhuo Zhang, Jingkai Sun, Michele Caprio, et al. (2025-08-23) [pdf](https://arxiv.org/pdf/2508.16943.pdf)
+- [Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation](https://arxiv.org/abs/2610.11220) — Volodymyr Shcherbyna, Linh Kästner, Duc Anh Do, et al. (2026-10-08) [pdf](https://arxiv.org/pdf/2610.11220.pdf)
+- [Cooperating with Future Collaborators: Multi-Agent RL under Staggered Participation](https://arxiv.org/abs/2610.07578) — Jianglin Qiao, Siyi Hu, Thien Hoang Nguyen, et al. (2026-10-06) [pdf](https://arxiv.org/pdf/2610.07578.pdf)
 <!-- research-bot:end -->
