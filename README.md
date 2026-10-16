@@ -389,6 +389,5 @@ Special thanks to all contributors and the NVIDIA Isaac team for making these re
 ## 🧠 Latest Research (auto-updated)
 
 <!-- research-bot:start -->
-- [HumanoidVerse: A Versatile Humanoid for Vision-Language Guided
-  Multi-Object Rearrangement](https://arxiv.org/abs/2508.16943) — Haozhuo Zhang, Jingkai Sun, Michele Caprio, et al. (2025-08-23) [pdf](https://arxiv.org/pdf/2508.16943.pdf)
+- [Sim-to-Real Reinforcement Learning for Path-Safe Target Reaching in Robotic Harvesting of Hydroponic Lettuce](https://arxiv.org/abs/2610.22337) — Al Bashir, Partho Ghose, Yibin Wang, et al. (2026-10-15) [pdf](https://arxiv.org/pdf/2610.22337.pdf)
 <!-- research-bot:end -->
